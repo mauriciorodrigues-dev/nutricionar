@@ -5,91 +5,97 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
 }
 
 body,
 html {
-    background-color: black;
+    background: #8E0E00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F1C18, #8E0E00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.header {
-    border-bottom: 1px solid #ccc;
-    height: 10vh;
-    background-color: red;
-}
-
-h1 {
-    font-weight: bold;
-    color: #ccc;
-    text-align: center;
-}
-
-.main {
-    height: 80vh;
+header,
+footer {
+    background-color: rgb(155, 1, 1);
+    min-height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+main {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
     max-width: 1200px;
     margin: auto;
-    background-image: url('../../../img/circulo.png');
-    background-position: center center;
-    background-size: cover;
-    animation: girar 30s linear infinite;
+}
+
+.img-index {
+    max-width: 500px;
+   
+
+}
+
+.img-index img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
 }
 
 
-.footer {
-    border-top: 1px solid #ccc;
-    height: 10vh;
-    background-color: red;
+.destaque {
+    color: rgb(218, 18, 18);
 }
 
-@keyframes girar {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: .4s;
 }
 
-.zoomInDown {
-    -webkit-animation-name: zoomInDown;
-    animation-name: zoomInDown;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+a:hover {
+    background-color: rgb(155, 1, 1);
+}
+
+.conteudo {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.conteudo h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+@media (max-width: 900px){
+    main {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        gap: 20px;
     }
-    @-webkit-keyframes zoomInDown {
-    0% {
-    opacity: 0;
-    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+
+    .conteudo h1 {
+        font-size: 1.5rem;
+        text-align: center;
+
     }
-    60% {
-    opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    }
-    }
-    @keyframes zoomInDown {
-    0% {
-    opacity: 0;
-    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    }
-    60% {
-    opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    }
-    } 
+}
