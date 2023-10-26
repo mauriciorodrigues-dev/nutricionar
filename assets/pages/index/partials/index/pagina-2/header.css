@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ffffff36;
+    height: 10vh;
+    color: #fff;
+}
+
+.destaque {
+    color: red;
+}
+
+.header .title a h1 {
+    font-size: 3rem;
+}
+
+.header p {
+    text-align: center;
+    margin-top: -10px;
+}
+
+.header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px;
+    transition: .4s;
+}
+
+.header a:nth-child(1) {
+    text-transform: none;
+}
+
+.header a:hover {
+    opacity: .4;
+}
+
+
+@media (max-width: 766px){
+    nav {
+        display: none;
+    }
+
+    .title {
+        text-align: center;
+    }
+}
+
