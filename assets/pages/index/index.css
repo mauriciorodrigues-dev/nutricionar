@@ -79,12 +79,17 @@ a:hover {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 .conteudo h1 {
     font-size: 4rem;
     text-align: center;
+}
+
+.title-main p {
+    text-align: center;
+    margin-top: -18px;
 }
 
 
@@ -170,34 +175,76 @@ a:hover {
     animation-duration: 3s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    }
-    @-webkit-keyframes fadeInUpBig {
+}
+
+@-webkit-keyframes fadeInUpBig {
     0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
+        opacity: 0;
+        -webkit-transform: translate3d(0, 2000px, 0);
+        transform: translate3d(0, 2000px, 0);
     }
+
     100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
     }
-    }
-    @keyframes fadeInUpBig {
+}
+
+@keyframes fadeInUpBig {
     0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
+        opacity: 0;
+        -webkit-transform: translate3d(0, 2000px, 0);
+        transform: translate3d(0, 2000px, 0);
     }
+
     100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
     }
-    } 
+}
+
+.fadeInDownBig {
+    -webkit-animation-name: fadeInDownBig;
+    animation-name: fadeInDownBig;
+    -webkit-animation-duration: 1s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDownBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -2000px, 0);
+        transform: translate3d(0, -2000px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDownBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -2000px, 0);
+        transform: translate3d(0, -2000px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
 
 
-@media (max-width: 900px) {
+
+ @media (max-width: 900px) {
     main {
         flex-direction: column;
         justify-content: center;
@@ -219,5 +266,11 @@ a:hover {
         font-size: 3rem;
         text-align: center;
 
+    }
+
+    .title-main p {
+        text-align: center;
+        margin-top: -10px;
+        margin-bottom: 20px;
     }
 }
