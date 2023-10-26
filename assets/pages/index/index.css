@@ -35,7 +35,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 30px;
+    gap: 0px;
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
@@ -58,6 +58,7 @@ main {
     color: rgb(218, 18, 18);
 }
 
+
 a {
     text-decoration: none;
     text-transform: uppercase;
@@ -78,7 +79,7 @@ a:hover {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
 }
 
 .conteudo h1 {
@@ -201,7 +202,7 @@ a:hover {
         flex-direction: column;
         justify-content: center;
         padding: 5px;
-        gap: 10px;
+        gap: 0px;
     }
 
     .conteudo {
