@@ -11,7 +11,7 @@
     color: red;
 }
 
-.header .title a h1 {
+.header .title h1 {
     font-size: 3rem;
 }
 
@@ -26,10 +26,6 @@
     color: #fff;
     padding: 20px;
     transition: .4s;
-}
-
-.header a:nth-child(1) {
-    text-transform: none;
 }
 
 .header a:hover {
