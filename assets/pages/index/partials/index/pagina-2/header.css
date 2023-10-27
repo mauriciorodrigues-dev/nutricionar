@@ -34,12 +34,18 @@
 
 
 @media (max-width: 766px){
-    nav {
-        display: none;
-    }
+
 
     .title {
         text-align: center;
+    }
+
+    .header .title h1 {
+        font-size: 2rem;
+    }
+
+    .header .title p {
+        font-size: 0.6rem;
     }
 }
 
