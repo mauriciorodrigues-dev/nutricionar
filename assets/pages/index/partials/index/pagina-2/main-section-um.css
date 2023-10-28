@@ -1,0 +1,13 @@
+main h1, h2, h3, p {
+    margin: 20px 0;
+}
+
+main h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 40px;
+}
