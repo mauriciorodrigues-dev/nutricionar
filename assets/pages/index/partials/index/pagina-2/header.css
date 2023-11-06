@@ -30,15 +30,19 @@
     margin-top: -10px;
 }
 
-.header a {
+.header .Button-login {
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
+    color: #ffffff;
     padding: 20px;
     transition: .4s;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
 }
 
-.header a:hover {
+.header .Button-login:hover {
     opacity: .4;
 }
 

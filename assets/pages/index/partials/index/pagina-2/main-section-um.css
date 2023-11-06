@@ -16,6 +16,11 @@ main p {
     text-indent: 40px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .section {
     background-color: #fff;
     padding: 30px;
@@ -43,14 +48,14 @@ img {
 
 }
 
-.modal {
+dialog {
     border-radius: 10px;
     width: 650px;
     height: 400px;
-    position: fixed;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,6 +66,7 @@ img {
     background: linear-gradient(to right, #1F1C18, #8E0E00);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
+    z-index: 999;
 }
 
 .container-modal {
@@ -69,13 +75,10 @@ img {
     align-items: center;
     padding: 5px;
     gap: 10px;
-
 }
 
 .card-img {
     max-width: 150px;
-    
-
 }
 
 .card-img img {
