@@ -1,0 +1,134 @@
+/* Reset */
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/*-------------Header----------------*/
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+
+header .container__header {
+    width: 1600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .container__header h1 {
+    color: purple;
+    font-size: 2.5em;
+}
+
+header .container__header ul {
+    list-style: none;
+}
+
+header .container__header ul li {
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+header .container__header ul li:last-child {
+    margin-right: 0;
+}
+
+header .container__header ul li i {
+    margin-right: 5px;
+    font-size: 1.3em;
+}
+
+header .container__header ul li a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+
+/* -------------Section Wellcome--------------- */
+.container__wellcome {
+    width: 100%;
+    margin: auto;
+    height: 90vh;
+    background-image: linear-gradient(to bottom, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+.container-grupo {
+    width: 1500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 100%;
+}
+
+.c__wellcome-text {
+    height: 60%;
+}
+
+.c__wellcome-text button {
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: rgb(56, 105, 212);
+    color: white;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+.c__wellcome-text button:hover {
+    opacity: .9;
+}
+
+.container__wellcome .c__wellcome-text h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5em;
+    font-weight: 900;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.container__wellcome .c__wellcome-text p {
+    text-indent: 60px;
+    line-height: 1.4;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+/* ---------------Section Macronutrientes */
+.container__macronutrientes {
+    width: 50%;
+    margin: auto;
+    height: 100vh;
+}
+
+.cont-grupo {
+    width: 1500px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    gap: 50px;
+}
+
+.cont-grupo .card {
+    width: 300px;
+    border: 1px solid;
+    padding: 10px;
+}
