@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: #f8f9fa;
+  background-color: #0f0f0f;
   overflow: hidden;
 }
 
@@ -37,12 +37,14 @@
   padding: 20px;
   border-radius: 5px;
   gap: 10px;
+  color: rgb(250, 250, 250);
 }
 
 .form-login .form-items {
   display: flex;
   flex-direction: column;
   width: 100%;
+  color: white;
 }
 
 .form-login .form-items input {
