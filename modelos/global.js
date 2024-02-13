@@ -1,17 +1,40 @@
 //Criando um botão de login
-
+const usuarios = [
+  { user: 'dyrson', pass: '1234', pagina: 'principal.html' },
+  { user: 'gabriel', pass: '1235', pagina: 'principal2.html' },
+  { user: 'usuario3', pass: '1236', pagina: 'principal3.html' }
+];
 
 function logar() {
-
   const nome = document.querySelector("#nome").value;
   const senha = document.querySelector("#senha").value;
 
-  if (nome == "admin" && senha == "123") {
-    alert("Logado com sucesso!");
-    window.location.href = "modelos/principal.html";
-  } else {
-    alert("Usuário ou Senha incorreto! Tente novamente.");
+  for (let i = 0; i < usuarios.length; i++) {
+    if (usuarios[i].user === nome && usuarios[i].pass === senha) {
+      alert("Logado com sucesso!");
+      window.location.href = "modelos/" + usuarios[i].pagina;
+      return; // Sai da função após encontrar correspondência
+    }
   }
+
+  // Se o loop não encontrar correspondência
+  alert("Usuário ou Senha incorreto! Tente novamente.");
 }
+
+
+
+
+// function logar() {
+
+//   const nome = document.querySelector("#nome").value;
+//   const senha = document.querySelector("#senha").value;
+
+//   if (nome == "admin" && senha == "123") {
+//     alert("Logado com sucesso!");
+//     window.location.href = "modelos/principal.html";
+//   } else {
+//     alert("Usuário ou Senha incorreto! Tente novamente.");
+//   }
+// }
 
 //Adicionando o evento click no botao de clicar para ch
