@@ -1,134 +1,93 @@
-/* Reset */
 @charset "UTF-8";
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-/*-------------Header----------------*/
-header {
-    width: 100%;
-    height: 10vh;
-    display: flex;
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f8f9fa;
 }
 
-header .container__header {
-    width: 1600px;
-    margin: auto;
+.login {
+  width: 350px;
+  width: 100%;
+}
+
+.login .img-logo img {
+  width: 100%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.form-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.form-login .form-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-login .form-items input {
+  background: #f8f9fa;
+  border: 1px solid #ccc;
+  outline: none;
+  color: #6a7d8e;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+  display: inline-block;
+}
+
+.btn {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#entrar {
+  background-color: rgb(0, 140, 255);
+  color: white;
+}
+
+#limpar {
+  background-color: rgb(47, 131, 47);
+  color: white;
+}
+
+@media (min-width: 720px) {
+  .login {
     display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-
-}
-
-header .container__header h1 {
-    color: purple;
-    font-size: 2.5em;
-}
-
-header .container__header ul {
-    list-style: none;
-}
-
-header .container__header ul li {
-    display: inline-block;
-    margin-right: 3rem;
-}
-
-header .container__header ul li:last-child {
-    margin-right: 0;
-}
-
-header .container__header ul li i {
-    margin-right: 5px;
-    font-size: 1.3em;
-}
-
-header .container__header ul li a {
-    text-decoration: none;
-    color: black;
-    margin-left: 10px;
-    font-size: 1.1em;
-}
-
-/* -------------Section Wellcome--------------- */
-.container__wellcome {
-    width: 100%;
-    margin: auto;
-    height: 90vh;
-    background-image: linear-gradient(to bottom, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-}
-
-.container-grupo {
-    width: 1500px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    height: 100%;
-}
-
-.c__wellcome-text {
-    height: 60%;
-}
-
-.c__wellcome-text button {
+    width: 800px;
+    gap: 10px;
+    box-shadow: 5px 5px 25px #cecccc;
     padding: 20px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    background-color: rgb(56, 105, 212);
-    color: white;
-    border-radius: 8px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
-    transition: all 0.2s ease-in-out;
-}
-
-.c__wellcome-text button:hover {
-    opacity: .9;
-}
-
-.container__wellcome .c__wellcome-text h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 5em;
-    font-weight: 900;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 10px;
-}
-
-.container__wellcome .c__wellcome-text p {
-    text-indent: 60px;
-    line-height: 1.4;
-    text-align: justify;
-    margin-bottom: 50px;
-}
-
-/* ---------------Section Macronutrientes */
-.container__macronutrientes {
-    width: 50%;
-    margin: auto;
-    height: 100vh;
-}
-
-.cont-grupo {
-    width: 1500px;
-    margin: auto;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid;
-    gap: 50px;
-}
-
-.cont-grupo .card {
-    width: 300px;
-    border: 1px solid;
-    padding: 10px;
+    border-radius: 5px;
+  }
+  .form-login {
+    width: 80%;
+  }
 }
