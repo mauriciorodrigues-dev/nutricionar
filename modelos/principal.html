@@ -9,9 +9,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="linha">
-      <h1>Nutricionar</h1>
-    </header>
+  
     <div class="container">
       <!-- Section -->
       <section class="sidebar linha">
@@ -21,7 +19,13 @@
         <a href="#" onclick="mostrarSecao('medidas')"><i class="fa-solid fa-weight-scale"></i><div class="icon-name">Medidas</div></a>
       </section>
       <div id="dashboard">
-        <div id="home" class="secao ativo">Conteúdo da Home</div>
+        <div id="home" class="secao ativo">
+
+          <h3 id="saudacao">A</h3>
+
+
+
+        </div>
         <div id="dieta" class="secao">Conteúdo da Dieta</div>
         <div id="treino" class="secao">Conteúdo do Treino</div>
         <div id="medidas" class="secao">Conteúdo das Medidas</div>
@@ -45,5 +49,6 @@
 // Inicialmente mostra a seção 'home'
 mostrarSecao('home');
     </script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

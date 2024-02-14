@@ -14,7 +14,7 @@ body {
 
 header {
   height: 5vh;
-  width: 100%;
+  width: 80%;
   background-color: black;
   color: white;
   text-align: center;
@@ -26,8 +26,8 @@ header {
 .container {
   display: flex;
   flex-wrap: wrap;
+  height: 100dvh;
   width: 100%;
-  height: 95dvh;
 }
 
 .sidebar {
@@ -105,51 +105,41 @@ header {
 }
 
 .secao {
+  flex-grow: 1;
   height: 100%;
+  background: rgb(149,151,154);
+background: linear-gradient(to bottom, rgba(149,151,154,1) 0%, rgba(245,241,243,1) 100%);
 }
 
-
-#home {
-  background-color: orange;
-}
-
-#dieta {
-  background-color: rgb(77, 182, 36);
-}
-
-#treino {
-  background-color: rgb(0, 162, 255);
-}
-
-#medidas {
-  background-color: rgb(255, 0, 221);
-}
 
 #dashboard {
-  width: 80%;
-  border: 4px solid red;
+  flex-grow: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 720px) {
+  /* .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1250px;
+    margin: 0 auto;
+    height: 95dvh;
+  } */
   .icon-name {
     display: block;
   }
-.sidebar {
-  justify-content: center;
+  .sidebar {
+    width: 200px;
+    justify-content: center;
+  }
+  .secao {
+    flex-grow: 1;
+    height: 100%;
+  }
 }
 
+@media (min-width: 1500px) {
+  .container {
+    width: 1500px;
+    margin: 0 auto;
+  }
 }
