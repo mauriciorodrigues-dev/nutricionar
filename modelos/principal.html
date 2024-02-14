@@ -3,58 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Modelo</title>
-    <!-- Estilos -->
     <link rel="stylesheet" href="global.css" />
-    <script
-      src="https://kit.fontawesome.com/fc1d6ae1da.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/fc1d6ae1da.js" crossorigin="anonymous"></script>
+    <title>Modelo</title>
   </head>
   <body>
+    <!-- Header -->
+    <header class="linha">
+      <h1>Nutricionar</h1>
+    </header>
     <div class="container">
-      <header>
-        <div class="icon">
-          <i class="fa-solid fa-chart-line"></i>
-        </div>
-        <div class="title">
-          <h1>Nutricionar</h1>
-        </div>
-      </header>
-      <section class="sidebar">
-        <div class="icon-group">
-          <a href="#"
-            ><i class="fa-solid fa-house">
-              <label class="block-mobile" for="home">Home</label>
-            </i>
-          </a>
-        </div>
-        <div class="icon-group">
-          <a href="#"
-            ><i class="fa-solid fa-fish-fins">
-            <label class="block-mobile" for="home">Dieta</label>
-          </i>
-          </a>
-        </div>
-        <div class="icon-group">
-          <a href="#"
-            ><i class="fa-solid fa-dumbbell">
-            <label class="block-mobile" for="home">Treino</label>
-          </i>
-          </a>
-        </div>
-        <div class="icon-group">
-          <a href="#"
-            ><i class="fa-solid fa-weight-scale">
-            <label class="block-mobile" for="home">Medidas</label>
-          </i>
-          </a>
-        </div>
+      <!-- Section -->
+      <section class="sidebar linha">
+        <a class="active" href="#"><i class="fa-solid fa-house"></i><div class="icon-name">Home</div></a>
+        <a href="#"><i class="fa-solid fa-utensils"></i><div class="icon-name">Dieta</div></a>
+        <a href="#"><i class="fa-solid fa-dumbbell"></i><div class="icon-name">Treino</div></a>
+        <a href="#"><i class="fa-solid fa-weight-scale"></i><div class="icon-name">Medidas</div></a>
       </section>
-      <section class="title">
-      
+
+
+      <section class="main linha">
+        <div class="title">
+          <h2>Dashboard</h2>
+        </div>
+        <div class="info">
+          <p><span>Mauricio Rodrigues</span></p>
+        </div>
+        <div class="card-info">
+          <div class="img">
+            <img src="../assets/img/peso.png" alt="">
+          </div>
+          <div class="peso">
+            <p>Peso Atual: 90kg</p>
+          </div>
+        </div>
+        </div>
       </section>
     </div>
-    <script src="global.js"></script>
   </body>
 </html>

@@ -4,91 +4,136 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: sans-serif;
 }
-html {
+
+html,
+body {
   height: 100%;
+}
+
+header {
+  height: 5vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   display: flex;
-  flex-direction: column;
-  background-color: #e9e8e8;
-  height: 100dvh;
-}
-
-header {
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  padding: 0 10px;
-  height: 5vh;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 95dvh;
 }
 
 .sidebar {
   width: 20%;
+  background-color: rgb(253, 253, 253);
   height: 100%;
-  border-right: 1px solid #ccc;
-  background-color: white;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   flex-direction: column;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.sidebar a {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
+  text-decoration: none;
+  color: #aaa8a8;
+  width: 100%;
+  padding: 10px 0;
 }
 
-.sidebar a {
-  display: block;
-  padding: 20px;
-  text-align: center;
-  padding: 10px 0;
-  text-decoration: none;
-  color: #ccc;
-  font-size: 0.5em;
+.active {
+  border-left: 4px solid blue;
+  background-color: #ccc;
 }
 
 .sidebar a i {
-  font-size: 20px;
-  color: #ccc;
+  font-size: 1.5em;
+  color: #aaa8a8;
+  margin: 0;
 }
 
-.sidebar a i:hover {
-  color: grey;
-}
-
-.block-mobile {
+.icon-name {
   display: none;
+  text-align: center;
+  width: 50%;
 }
 
-@media (min-width: 768px) {
-  .sidebar {
-    flex: 20 1 15%;
+.main {
+ width: 80%;
+  background-color: #cccccc73;
+  height: 100%;
+}
 
-    height: 100vh;
-  }
-  .block-mobile {
+.title {
+  background-color: rgb(42, 152, 241);
+  padding: 10px;
+  color: white;
+}
+
+.info {
+  margin: 20px;
+  width: 250px;
+  padding: 40px;
+  background-image: linear-gradient(
+    288deg,
+    rgba(0, 85, 255, 1) 1.5%,
+    rgba(4, 56, 115, 1) 91.6%
+  );
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #575454;
+  color: white;
+}
+
+.card-info {
+  width: 150px;
+  border: 1px solid;
+  height: 150px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-info img {
+  width: 100%;
+  background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 720px) {
+  .icon-name {
     display: block;
   }
-  .icon-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 25px;
-  }
-  .icon-group a {
-    margin-right: 20px;
-  }
-  .icon-group a i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-  }
-  .title {
-    flex: 1;
-  }
+.sidebar {
+  width: 300px;
+  justify-content: center;
+}
+.main {
+  width: calc(100% - 300px);
+}
 
 }
