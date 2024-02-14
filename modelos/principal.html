@@ -15,30 +15,35 @@
     <div class="container">
       <!-- Section -->
       <section class="sidebar linha">
-        <a class="active" href="#"><i class="fa-solid fa-house"></i><div class="icon-name">Home</div></a>
-        <a href="#"><i class="fa-solid fa-utensils"></i><div class="icon-name">Dieta</div></a>
-        <a href="#"><i class="fa-solid fa-dumbbell"></i><div class="icon-name">Treino</div></a>
-        <a href="#"><i class="fa-solid fa-weight-scale"></i><div class="icon-name">Medidas</div></a>
+        <a href="#" onclick="mostrarSecao('home')"><i class="fa-solid fa-house"></i><div class="icon-name">Home</div></a>
+        <a href="#"onclick="mostrarSecao('dieta')"><i class="fa-solid fa-utensils"></i><div class="icon-name">Dieta</div></a>
+        <a href="#"onclick="mostrarSecao('treino')"><i class="fa-solid fa-dumbbell"></i><div class="icon-name">Treino</div></a>
+        <a href="#" onclick="mostrarSecao('medidas')"><i class="fa-solid fa-weight-scale"></i><div class="icon-name">Medidas</div></a>
       </section>
+      <div id="dashboard">
+        <div id="home" class="secao ativo">Conteúdo da Home</div>
+        <div id="dieta" class="secao">Conteúdo da Dieta</div>
+        <div id="treino" class="secao">Conteúdo do Treino</div>
+        <div id="medidas" class="secao">Conteúdo das Medidas</div>
+      </div>
 
-
-      <section class="main linha">
-        <div class="title">
-          <h2>Dashboard</h2>
-        </div>
-        <div class="info">
-          <p><span>Mauricio Rodrigues</span></p>
-        </div>
-        <div class="card-info">
-          <div class="img">
-            <img src="../assets/img/peso.png" alt="">
-          </div>
-          <div class="peso">
-            <p>Peso Atual: 90kg</p>
-          </div>
-        </div>
-        </div>
-      </section>
+      
     </div>
+    <script>
+      function mostrarSecao(secao) {
+  // Oculta todas as seções
+  document.querySelectorAll('.secao').forEach(secao => {
+    secao.style.display = 'none';
+    secao.classList.remove('ativo');
+  });
+
+  // Mostra apenas a seção desejada
+  document.getElementById(secao).style.display = 'block';
+  document.getElementById(secao).classList.add('ativo');
+}
+
+// Inicialmente mostra a seção 'home'
+mostrarSecao('home');
+    </script>
   </body>
 </html>
