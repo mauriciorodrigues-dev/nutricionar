@@ -1,6 +1,6 @@
 //Criando um botão de login
 const usuarios = [
-  { user: "Mauricio", pass: "1234", pagina: "user__.html" },
+  { user: "Mauricio", pass: "1234", pagina: "user___.html" },
   { user: "gabriel", pass: "1235", pagina: "principal2.html" },
   { user: "usuario3", pass: "1236", pagina: "principal3.html" },
 ];
