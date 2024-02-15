@@ -29,7 +29,7 @@
 
       <div class="areas" id="dashboard">
 
-        <div id="home" class="secao ativo">
+        <div id="home" class="secao">
           <div class="row">
             <div class="card green">
               <h2>Carboidrado</h2>
@@ -55,22 +55,6 @@
 
       
     </div>
-    <script>
-      function mostrarSecao(secao) {
-  // Oculta todas as seções
-  document.querySelectorAll('.secao').forEach(secao => {
-    secao.style.display = 'none';
-    secao.classList.remove('ativo');
-  });
-
-  // Mostra apenas a seção desejada
-  document.getElementById(secao).style.display = 'block';
-  document.getElementById(secao).classList.add('ativo');
-}
-
-// Inicialmente mostra a seção 'home'
-mostrarSecao('home');
-    </script>
     <script src="../global/global.js"></script>
   </body>
 </html>
