@@ -3,12 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="../global/global.css" />
+    <link rel="stylesheet" href="../fonts/fonts.css">
     <script src="https://kit.fontawesome.com/fc1d6ae1da.js" crossorigin="anonymous"></script>
     <title>Modelo</title>
   </head>
   <body>
     <!-- Header -->
+    <header>
+      <div class="saudacao">
+        <h3 id="saudacao"></h3>
+        <p>Seu painel principal...</p>
+      </div>
+    </header>
   
     <div class="container">
       <!-- Section -->
@@ -20,51 +27,27 @@
       </section>
 
 
-      <div id="dashboard">
+      <div class="areas" id="dashboard">
 
         <div id="home" class="secao ativo">
-          
-            <div class="saudacao">
-              <h3 id="saudacao"></h3>
-              <p>Seu painel principal...</p>
+          <div class="row">
+            <div class="card green">
+              <h2>Carboidrado</h2>
+              <p>Consumo diário: 350g</p>
+              <img class="image" src="../assets/img/pao.png" alt="pão" />
             </div>
-            <div class="group">
-            <div class="card-macro">
-              <div class="grama">
-                <i class="fa-solid fa-drumstick-bite"></i>
-                <span class="gramagem">227</span>
-                <p style="font-size: 30px;">g</p>
-              </div>
-              <div class="nome-macro">Carboidrato</div>
-              <div class="barra">
-                <div class="nivel"></div>
-              </div>
+            <div class="card blue">
+              <h2>Proteína</h2>
+              <p>Consumo diário: 220g</p>
+              <img class="image" src="../assets/img/proteins.png" alt="settings" />
             </div>
-            <div class="card-macro">
-              <div class="grama">
-                <i class="fa-solid fa-drumstick-bite"></i>
-                <span class="gramagem">227</span>
-                <p style="font-size: 30px;">g</p>
-              </div>
-              <div class="nome-macro">Proteína</div>
-              <div class="barra">
-                <div class="nivel"></div>
-              </div>
-            </div>
-            <div class="card-macro">
-              <div class="grama">
-                <i class="fa-solid fa-drumstick-bite"></i>
-                <span class="gramagem">227</span>
-                <p style="font-size: 30px;">g</p>
-              </div>
-              <div class="nome-macro">Gordura</div>
-              <div class="barra">
-                <div class="nivel"></div>
-              </div>
+            <div class="card red">
+              <h2>Gordura</h2>
+              <p>Consumo diário: 90g</p>
+              <img class="image" src="../assets/img/oil.png" alt="article" />
             </div>
           </div>
         </div>
-
         <div id="dieta" class="secao">Conteúdo da Dieta</div>
         <div id="treino" class="secao">Conteúdo do Treino</div>
         <div id="medidas" class="secao">Conteúdo das Medidas</div>
@@ -88,6 +71,6 @@
 // Inicialmente mostra a seção 'home'
 mostrarSecao('home');
     </script>
-    <script src="../js/script.js"></script>
+    <script src="../global/global.js"></script>
   </body>
 </html>
