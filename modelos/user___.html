@@ -4,80 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../global/global.css" />
-    <link rel="stylesheet" href="../fonts/fonts.css">
-    <script src="https://kit.fontawesome.com/fc1d6ae1da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../fonts/fonts.css" />
+    <script
+      src="https://kit.fontawesome.com/fc1d6ae1da.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <title>Modelo</title>
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <div class="saudacao">
-        <h3 id="saudacao"></h3>
-        <p>Seu painel principal...</p>
-      </div>
-    </header>
-  
     <div class="container">
-      <!-- Section -->
-      <section class="sidebar linha">
-        <a href="#" onclick="mostrarSecao('home')"><i class="fa-solid fa-house"></i><div class="icon-name">Home</div></a>
-        <a href="#"onclick="mostrarSecao('dieta')"><i class="fa-solid fa-utensils"></i><div class="icon-name">Dieta</div></a>
-        <a href="#"onclick="mostrarSecao('treino')"><i class="fa-solid fa-dumbbell"></i><div class="icon-name">Treino</div></a>
-        <a href="#" onclick="mostrarSecao('medidas')"><i class="fa-solid fa-weight-scale"></i><div class="icon-name">Medidas</div></a>
-      </section>
-
-
-      <div class="areas" id="dashboard">
-
-        <div id="home" class="secao">
-          <h2 class="title-dois">Consumo de Macronutrientes</h2>
-          <div class="row">
-            <div class="card green">
-              <h2>Carboidrado</h2>
-              <p>Consumo diário: 350g</p>
-              <img class="image" src="../assets/img/pao.png" alt="pão" />
-            </div>
-            <div class="card blue">
-              <h2>Proteína</h2>
-              <p>Consumo diário: 220g</p>
-              <img class="image" src="../assets/img/proteins.png" alt="settings" />
-            </div>
-            <div class="card red">
-              <h2>Gordura</h2>
-              <p>Consumo diário: 90g</p>
-              <img class="image" src="../assets/img/oil.png" alt="article" />
-            </div>
-            <div class="card-dash">
-              <canvas id="grafico-macros"></canvas>
-            </div>
-          </div>
-          <!-- grafico peso -->
-          <div class="dash">
-            <div class="card-dash">
-              <h2 class="title-dois">Evolução do Peso</h2>
-              <canvas id="grafico-peso"></canvas>
-            </div>
-          </div>
-
+      <div class="sidebar">
+        <!-- Img Perfil -->
+        <div class="img-perfil">
+          <img src="../assets/img/perfil.jpg" alt="" />
         </div>
-
-
-
-
-
-
-
-
-
-
-        <div id="dieta" class="secao">Conteúdo da Dieta</div>
-        <div id="treino" class="secao">Conteúdo do Treino</div>
-        <div id="medidas" class="secao">Conteúdo das Medidas</div>
+        <!-- links páginas -->
+        <div class="links-content">
+          <nav>
+            <label class="label-clss" for="Home"
+              ><a href="#" id="Home">Início</a></label
+            >
+            <label class="label-clss" for="Dashboard"
+              ><a href="#" id="Dashboard">Painel de Controle</a></label
+            >
+            <label class="label-clss" for="Dieta"
+              ><a href="#" id="Dieta">Dieta</a></label
+            >
+            <label class="label-clss" for="Treino"
+              ><a href="#" id="Treino">Treino Físico</a></label
+            >
+            <label class="label-clss" for="Medidas"
+              ><a href="#" id="Medidas">Bioimpedância</a></label
+            >
+          </nav>
+        </div>
       </div>
-
-      
+      <div class="header">
+        <h1>Dashboard Nutricional</h1>
+        <p id="saudacao"></p>
+      </div>
+      <div class="content">Conteudo</div>
     </div>
     <script src="../global/global.js"></script>
     <script src="../modelos/areas.js"></script>

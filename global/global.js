@@ -12,11 +12,11 @@ function saudacao() {
   let horas = data.getHours(); // Obtém as horas da data
 
   if (horas >= 12 && horas < 18) {
-    saud.innerHTML = "Boa Tarde, Mauricio!";
+    saud.innerHTML = "Boa Tarde, Luiza";
   } else if (horas >= 18) {
-    saud.innerHTML = "Boa Noite, Mauricio!";
+    saud.innerHTML = "Boa Noite, Luiza";
   } else {
-    saud.innerHTML = "Bom Dia, Mauricio!";
+    saud.innerHTML = "Bom Dia, Luiza";
   }
 }
 
