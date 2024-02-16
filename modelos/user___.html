@@ -10,43 +10,64 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Modelo</title>
   </head>
   <body>
-    <div class="container">
-      <div class="sidebar">
-        <!-- Img Perfil -->
-        <div class="img-perfil">
-          <img src="../assets/img/perfil.jpg" alt="" />
-        </div>
-        <!-- links páginas -->
-        <div class="links-content">
-          <nav>
-            <label class="label-clss" for="Home"
-              ><a href="#" id="Home">Início</a></label
-            >
-            <label class="label-clss" for="Dashboard"
-              ><a href="#" id="Dashboard">Painel de Controle</a></label
-            >
-            <label class="label-clss" for="Dieta"
-              ><a href="#" id="Dieta">Dieta</a></label
-            >
-            <label class="label-clss" for="Treino"
-              ><a href="#" id="Treino">Treino Físico</a></label
-            >
-            <label class="label-clss" for="Medidas"
-              ><a href="#" id="Medidas">Bioimpedância</a></label
-            >
-          </nav>
-        </div>
+    <div class="sidebar">
+      <!-- Img Perfil -->
+      <div class="img-perfil">
+        <img src="../assets/img/perfil.jpg" alt="" />
       </div>
-      <div class="header">
-        <h1>Dashboard Nutricional</h1>
-        <p id="saudacao"></p>
+      <!-- links páginas -->
+      <div class="links-content">
+        <nav>
+          <button class="active">
+            <span 
+            class="material-symbols-outlined">
+              home
+              <span>Início</span>
+            </span>
+          </button>
+          <button>
+            <span class="material-symbols-outlined">
+              bar_chart_4_bars
+              <span>Painel de Controle</span>
+            </span>
+          </button>
+          <button>
+            <span class="material-symbols-outlined">
+              restaurant
+              <span>Dieta</span>
+            </span>
+          </button>
+          <button>
+            <span class="material-symbols-outlined">
+              fitness_center
+              <span>Treino</span>
+            </span>
+          </button>
+          <button>            
+            <span class="material-symbols-outlined">
+              readiness_score
+              <span>Medidas</span>
+              </span>
+            </span>
+          </button>
+        </nav>
       </div>
-      <div class="content">Conteudo</div>
     </div>
+    <!-- fim do cabeçalho -->
+    <div class="container">
+      <header class="header">
+        <p id="saudacao"></p>
+        <p>Dashboard</p>
+      </header>
+      <main class="main">
+        Conteúdo
+      </main>
+    </div>
+
     <script src="../global/global.js"></script>
     <script src="../modelos/areas.js"></script>
   </body>
