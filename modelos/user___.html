@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../global/global.css" />
     <link rel="stylesheet" href="../fonts/fonts.css">
     <script src="https://kit.fontawesome.com/fc1d6ae1da.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <title>Modelo</title>
   </head>
   <body>
@@ -30,6 +32,7 @@
       <div class="areas" id="dashboard">
 
         <div id="home" class="secao">
+          <h2 class="title-dois">Consumo de Macronutrientes</h2>
           <div class="row">
             <div class="card green">
               <h2>Carboidrado</h2>
@@ -46,8 +49,29 @@
               <p>Consumo diário: 90g</p>
               <img class="image" src="../assets/img/oil.png" alt="article" />
             </div>
+            <div class="card-dash">
+              <canvas id="grafico-macros"></canvas>
+            </div>
           </div>
+          <!-- grafico peso -->
+          <div class="dash">
+            <div class="card-dash">
+              <h2 class="title-dois">Evolução do Peso</h2>
+              <canvas id="grafico-peso"></canvas>
+            </div>
+          </div>
+
         </div>
+
+
+
+
+
+
+
+
+
+
         <div id="dieta" class="secao">Conteúdo da Dieta</div>
         <div id="treino" class="secao">Conteúdo do Treino</div>
         <div id="medidas" class="secao">Conteúdo das Medidas</div>
@@ -56,5 +80,6 @@
       
     </div>
     <script src="../global/global.js"></script>
+    <script src="../modelos/areas.js"></script>
   </body>
 </html>

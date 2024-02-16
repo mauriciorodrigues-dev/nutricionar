@@ -13,7 +13,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: #6d6a6a;
-  height: 100dvh;
+  height: auto;
 }
 
 header {
@@ -50,6 +50,8 @@ header {
   opacity: 0.7;
 }
 
+
+
 .areas {
   display: flex;
   justify-content: center;
@@ -72,7 +74,7 @@ header {
   margin: 20px;
   width: 300px;
   transition: all 0.3s ease-out;
-  background-color: #fff;
+  background-color: rgba  (255, 255, 255, .7);
 }
 
 .card:hover {
@@ -81,7 +83,7 @@ header {
 }
 
 .card p {
-  color: #a3a5ae;
+  color: #076df3;
   font-size: 16px;
 }
 
@@ -102,6 +104,73 @@ header {
 .red {
   border-left: 3px solid #b3404a;
 }
+
+.title-dois {
+  color: #076df3;
+  position: absolute;
+  top: -15px;
+  background-color: black;
+  padding: 10px;
+}
+
+.dash {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+
+/* GRÁFICO PESO */
+
+.card-dash {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 10px;
+  position: relative;
+}
+
+.card-weight canvas {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* MEDIA QUERY */
 
