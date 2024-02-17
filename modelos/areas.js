@@ -104,3 +104,14 @@ var graficoKcal = new Chart(ctx, {
     },
   },
 });
+
+// menu mobile
+function toggleMenu() {
+  const menuMobile = document.querySelector('#menuMobile');
+  if(menuMobile.className ==='menu-mobile-active'){
+    menuMobile.className='menu-mobile'
+  }else{
+    menuMobile.className='menu-mobile-active'
+  }
+}
+

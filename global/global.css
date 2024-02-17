@@ -14,10 +14,8 @@
   left: 0;
   width: 250px;
   height: 100%;
-  background-color: #3498db;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-
 
 .img-perfil {
   width: 100%;
@@ -53,7 +51,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .sidebar .links-content .active {
@@ -68,10 +66,10 @@
   display: inline-flex;
   align-items: center;
   gap: 20px;
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 }
 
-.sidebar .links-content nav button > span >span {
+.sidebar .links-content nav button > span > span {
   font-size: 1rem;
 }
 
@@ -79,7 +77,7 @@
   margin-left: 251px;
   display: flex;
   flex-direction: column;
-  transition: ease-in-out .05s;
+  transition: ease-in-out 0.05s;
 }
 
 header {
@@ -89,6 +87,9 @@ header {
   height: 10vh;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
+.btn-menu {
+  display: none;
+}
 
 #saudacao {
   font-family: "Protest Riot", sans-serif;
@@ -97,18 +98,72 @@ header {
   font-size: 1.4rem;
 }
 
+.main {
+  flex: 1;
+  min-height: 90vh;
+  background-color: rgba(235, 224, 243, 0.541);
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.button-mobile {
+  /* display: none; */
+  align-self: flex-start;
+  align-items: center;
+  margin: 16px;
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+}
+
+.menu-mobile-active {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  transition: ease-in-out .5s;
+}
+
+.menu-mobile-active button {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  margin-bottom: 20px;
+  width: 50%;
+  text-align: left;
+}
+
+.menu-mobile-active button > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  
+}
 
 
 
+.btn-menu {
+  background-color: transparent;
+  border: none;
+}
 
-
-
-
-
+.btn-menu button span {
+  font-size: 36px;
+}
 
 
 /* Media Query */
-@media(width < 920px){
+@media (width < 920px) {
   .sidebar {
     width: 72px;
   }
@@ -127,6 +182,20 @@ header {
     display: flex;
     flex-direction: column;
   }
-  
+}
+
+@media (max-width: 490px) {
+  .sidebar {
+    display: none;
+  }
+  .container {
+    margin-left: 0;
+  }
+  .title {
+    display: none;
+  }
+  .btn-menu {
+    display: block;
+  }
 
 }

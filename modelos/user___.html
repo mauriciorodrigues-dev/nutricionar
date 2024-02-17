@@ -14,7 +14,7 @@
     <title>Modelo</title>
   </head>
   <body>
-    <div class="sidebar">
+    <div id="mySidebar" class="sidebar">
       <!-- Img Perfil -->
       <div class="img-perfil">
         <img src="../assets/img/perfil.jpg" alt="" />
@@ -57,11 +57,73 @@
         </nav>
       </div>
     </div>
+    <!-- menu mobile -->
+   <nav id="menuMobile" class="menu-mobile">
+     <button onclick="toggleMenu()" class="button-mobile">
+      <span class="material-symbols-outlined">
+        close
+        </span>
+     </button>
+
+     <button class="active">
+      <span 
+      class="material-symbols-outlined">
+        home
+        <span class="mobile-text">Início</span>
+      </span>
+    </button>
+    <button>
+      <span class="material-symbols-outlined">
+        bar_chart_4_bars
+        <span class="mobile-text">Painel de Controle</span>
+      </span>
+    </button>
+    <button>
+      <span class="material-symbols-outlined">
+        restaurant
+        <span class="mobile-text">Dieta</span>
+      </span>
+    </button>
+    <button>
+      <span class="material-symbols-outlined">
+        fitness_center
+        <span class="mobile-text">Treino</span>
+      </span>
+    </button>
+    <button>            
+      <span class="material-symbols-outlined">
+        readiness_score
+        <span class="mobile-text">Medidas</span>
+        </span>
+      </span>
+    </button>
+
+   </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- fim do cabeçalho -->
     <div class="container">
       <header class="header">
         <p id="saudacao"></p>
-        <p>Dashboard</p>
+        <p class="title">Dashboard</p>
+        <button onclick="toggleMenu()" id="btn-menu" class="btn-menu">            
+          <span class="material-symbols-outlined">
+            menu
+            </span>
+        </button>
       </header>
       <main class="main">
         Conteúdo
