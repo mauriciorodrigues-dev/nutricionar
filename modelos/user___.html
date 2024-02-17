@@ -155,7 +155,17 @@
               </div>
 
               <div class="home__img">
-                <img src="../assets/img/NUTRICIONAR vermelho.png" alt="">
+                <picture>
+                  <!-- Imagem para dispositivos com largura menor que 720px -->
+                  <source media="(max-width: 719px)" srcset="../assets/img/logo_pequena.png">
+          
+                  <!-- Imagem para telas grandes com largura maior ou igual a 720px -->
+                  <source media="(min-width: 720px)" srcset="../assets/img/NUTRICIONAR vermelho.png">
+          
+                  <!-- Imagem padrão, caso as condições acima não sejam atendidas -->
+                  <img src="../assets/img/NUTRICIONAR vermelho.png" alt="Descrição da imagem">
+              </picture>
+                
               </div>
 
             </div>
