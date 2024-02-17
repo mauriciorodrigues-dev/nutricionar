@@ -22,32 +22,32 @@
       <!-- links páginas -->
       <div class="links-content">
         <nav>
-          <button class="active">
+          <button onclick="mostrarSecao('home')" class="active">
             <span 
             class="material-symbols-outlined">
               home
               <span>Início</span>
             </span>
           </button>
-          <button>
+          <button onclick="mostrarSecao('dashboard')">
             <span class="material-symbols-outlined">
               bar_chart_4_bars
-              <span>Painel de Controle</span>
+              <span>Dashboard</span>
             </span>
           </button>
-          <button>
+          <button onclick="mostrarSecao('dieta')">
             <span class="material-symbols-outlined">
               restaurant
               <span>Dieta</span>
             </span>
           </button>
-          <button>
+          <button onclick="mostrarSecao('treino')">
             <span class="material-symbols-outlined">
               fitness_center
               <span>Treino</span>
             </span>
           </button>
-          <button>            
+          <button onclick="mostrarSecao('medidas')">            
             <span class="material-symbols-outlined">
               readiness_score
               <span>Medidas</span>
@@ -65,32 +65,32 @@
         </span>
      </button>
 
-     <button class="active">
+     <button onclick="mostrarSecao('home')" class="active buttonInsideMenu" id="">
       <span 
       class="material-symbols-outlined">
         home
         <span class="mobile-text">Início</span>
       </span>
     </button>
-    <button>
+    <button onclick="mostrarSecao('dashboard')" class="buttonInsideMenu">
       <span class="material-symbols-outlined">
         bar_chart_4_bars
-        <span class="mobile-text">Painel de Controle</span>
+        <span class="mobile-text">Dashboard</span>
       </span>
     </button>
-    <button>
+    <button onclick="mostrarSecao('dieta')" class="buttonInsideMenu">
       <span class="material-symbols-outlined">
         restaurant
         <span class="mobile-text">Dieta</span>
       </span>
     </button>
-    <button>
+    <button onclick="mostrarSecao('treino')" class="buttonInsideMenu">
       <span class="material-symbols-outlined">
         fitness_center
         <span class="mobile-text">Treino</span>
       </span>
     </button>
-    <button>            
+    <button onclick="mostrarSecao('medidas')" class="buttonInsideMenu">            
       <span class="material-symbols-outlined">
         readiness_score
         <span class="mobile-text">Medidas</span>
@@ -118,7 +118,7 @@
     <div class="container">
       <header class="header">
         <p id="saudacao"></p>
-        <p class="title">Dashboard</p>
+        <p class="title">Controle Pessoal de Evolução nos treinos</p>
         <button onclick="toggleMenu()" id="btn-menu" class="btn-menu">            
           <span class="material-symbols-outlined">
             menu
@@ -126,7 +126,11 @@
         </button>
       </header>
       <main class="main">
-        Conteúdo
+        <div class="secao" id="home">Home</div>
+        <div class="secao" id="dashboard">Dashboard</div>
+        <div class="secao" id="dieta">Dieta</div>
+        <div class="secao" id="treino">Treino</div>
+        <div class="secao" id="medidas">Medidas</div>
       </main>
     </div>
 

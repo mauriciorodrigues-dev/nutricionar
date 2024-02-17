@@ -56,12 +56,20 @@ function mostrarSecao(secao) {
 
   // Ativa o link correspondente na sidebar
   ativarLinkDaSecaoAtiva();
+
 }
 
 // Inicialmente mostra a seção 'home'
 mostrarSecao('home');
 
 
-
+function toggleMenu() {
+  const menuMobile = document.querySelector('#menuMobile');
+  if(menuMobile.className ==='menu-mobile-active'){
+    menuMobile.className='menu-mobile'
+  }else{
+    menuMobile.className='menu-mobile-active'
+  }
+}
 
 

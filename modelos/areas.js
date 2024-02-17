@@ -106,12 +106,27 @@ var graficoKcal = new Chart(ctx, {
 });
 
 // menu mobile
+
 function toggleMenu() {
   const menuMobile = document.querySelector('#menuMobile');
-  if(menuMobile.className ==='menu-mobile-active'){
-    menuMobile.className='menu-mobile'
-  }else{
-    menuMobile.className='menu-mobile-active'
+  
+  if (menuMobile.classList.contains('menu-mobile-active')) {
+    menuMobile.classList.remove('menu-mobile-active');
+    menuMobile.classList.add('menu-mobile');
+  } else {
+    menuMobile.classList.remove('menu-mobile');
+    menuMobile.classList.add('menu-mobile-active');
   }
+
+  // Adicione este trecho para fechar o menu ao clicar em qualquer botão dentro do menu
+  const buttonsInsideMenu = document.querySelectorAll('.buttonInsideMenu');
+  buttonsInsideMenu.forEach(button => {
+    button.addEventListener('click', () => {
+      menuMobile.classList.remove('menu-mobile-active');
+      menuMobile.classList.add('menu-mobile');
+    });
+  });
 }
+
+
 
