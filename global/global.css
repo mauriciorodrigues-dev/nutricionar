@@ -76,22 +76,7 @@
   transition: ease-in-out 0.05s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-header {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -113,30 +98,6 @@ header {
   min-height: 90vh;
   background-color: rgba(234, 234, 235, 0.842);
 }
-
-.secao {
-  flex-grow: 1;
-  min-height: 90vh;
-}
-
-#home {
-  background-color: rgb(0, 255, 0);
-  
-}
-#dashboard {
-  background-color: rgb(0, 255, 255);
-}
-#dieta {
-  background-color: rgb(162, 0, 255);
-}
-#treino {
-  background-color: rgb(255, 0, 170);
-}
-#medidas {
-  background-color: rgb(255, 217, 0);
-}
-
-
 
 .menu-mobile {
   display: none;
@@ -165,7 +126,7 @@ header {
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  transition: ease-in-out .5s;
+  transition: ease-in-out 0.5s;
 }
 
 .menu-mobile-active button {
@@ -181,10 +142,7 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 20px;
-  
 }
-
-
 
 .btn-menu {
   background-color: transparent;
@@ -194,41 +152,6 @@ header {
 .btn-menu button span {
   font-size: 36px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Media Query */
 @media (width < 920px) {
@@ -265,5 +188,4 @@ header {
   .btn-menu {
     display: block;
   }
-
 }

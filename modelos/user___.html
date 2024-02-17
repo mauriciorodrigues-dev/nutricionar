@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../global/global.css" />
     <link rel="stylesheet" href="../fonts/fonts.css" />
+    <link rel="stylesheet" href="../modelos/areas/general.css">
+
+
     <script
       src="https://kit.fontawesome.com/fc1d6ae1da.js"
       crossorigin="anonymous"
@@ -31,7 +34,7 @@
           </button>
           <button onclick="mostrarSecao('dashboard')">
             <span class="material-symbols-outlined">
-              bar_chart_4_bars
+              dashboard
               <span>Dashboard</span>
             </span>
           </button>
@@ -51,6 +54,13 @@
             <span class="material-symbols-outlined">
               readiness_score
               <span>Medidas</span>
+              </span>
+            </span>
+          </button>
+          <button onclick="mostrarSecao('calculadora')">            
+            <span class="material-symbols-outlined">
+              calculate
+              <span>Calculadora</span>
               </span>
             </span>
           </button>
@@ -74,9 +84,9 @@
     </button>
     <button onclick="mostrarSecao('dashboard')" class="buttonInsideMenu">
       <span class="material-symbols-outlined">
-        bar_chart_4_bars
+        dashboard
         <span class="mobile-text">Dashboard</span>
-      </span>
+        </span>
     </button>
     <button onclick="mostrarSecao('dieta')" class="buttonInsideMenu">
       <span class="material-symbols-outlined">
@@ -94,6 +104,13 @@
       <span class="material-symbols-outlined">
         readiness_score
         <span class="mobile-text">Medidas</span>
+        </span>
+      </span>
+    </button>
+    <button onclick="mostrarSecao('calculadora')">            
+      <span class="material-symbols-outlined">
+        calculate
+        <span>Calculadora</span>
         </span>
       </span>
     </button>
@@ -125,12 +142,86 @@
             </span>
         </button>
       </header>
-      <main class="main">
-        <div class="secao" id="home">Home</div>
+        <div class="secao" id="home">
+
+          <header class="header__home">
+
+            <div class="home__header">
+              
+              <div class="text">
+                <h1>Bem vindo!</h1>
+                <p class="home__text">Iremos tratar dos assuntos relacionados a sua evolução! Aqui, mergulhamos no fascinante mundo da nutrição e musculação, oferecendo informações valiosas para ajudar você a alcançar seus objetivos. <br></p>
+                <span class="text-logo">Nutricionar - A mudança do seu shape começa aqui!</span>
+              </div>
+
+              <div class="home__img">
+                <img src="../assets/img/NUTRICIONAR vermelho.png" alt="">
+              </div>
+
+            </div>
+
+          </header>
+
+          <section class="macronutrientes">
+            <div class="macro-group">
+              <div class="macro">
+                <div class="img-macro">
+                  <img src="../assets/img/target.png" alt="">
+                </div>
+                <h2>Você sabe o que são macronutrientes?</h2>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <div class="secao" id="dashboard">Dashboard</div>
         <div class="secao" id="dieta">Dieta</div>
         <div class="secao" id="treino">Treino</div>
         <div class="secao" id="medidas">Medidas</div>
+        <div class="secao" id="calculadora">Calculadora</div>
       </main>
     </div>
 
