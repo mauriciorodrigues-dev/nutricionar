@@ -32,7 +32,7 @@
   width: 100%;
   font-size: 1.5em;
   margin-bottom: 25px;
-  text-indent: 50px;
+  text-indent: 10px;
 }
 
 .text-logo {
@@ -93,5 +93,7 @@
 @media(max-width: 720px){
   .macro {
     flex-direction: column;
+    text-align: center;
+    gap: 10px;
   }
 }
