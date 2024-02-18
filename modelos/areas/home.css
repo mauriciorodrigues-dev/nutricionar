@@ -13,10 +13,13 @@
 .header__home {
   margin-top: 20px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
 
 .home__header {
-  flex: 1;
+  flex-basis: 1500px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -48,13 +51,17 @@
   border-radius: 10px;
 }
 
+.macronutrientes {
+  background-color: rgb(218, 218, 218);
+  margin-bottom: 50px;
+}
+
 .macro-group {
   flex: 1;
   display: grid;
   place-items: center;
   padding: 10px;
   width: 100%;
-  height: 250px;
   background-image: url(../../assets/img/fundoazul.jpeg);
   background-size: cover;
   background-position: center center;
@@ -69,15 +76,17 @@
   color: #fff;
 }
 
-.text-macro {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.macro .img-macro img {
   width: 100%;
+}
+.text-macro {
+  flex-basis: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   margin-top: 10px;
-  margin-bottom: 40px;
-  height: auto;
+  margin-bottom: 10px;
 }
 
 .text-macro img {
@@ -85,7 +94,7 @@
 }
 
 .text-macro > p {
-  max-width: 600px;
+  max-width: 1000px;
   width: 100%;
   font-size: 1.3em;
   text-align: center;
@@ -93,7 +102,6 @@
 
 .macro-cards {
   width: 100%;
-  min-height: 500px;
   margin-top: 30px;
   display: flex;
   align-items: center;
@@ -101,12 +109,11 @@
   flex-wrap: wrap;
   gap: 30px;
   padding: 10px;
-  background: linear-gradient(90deg, #00d0ff94 0%, #3a47d591 100%);
 }
 
 .card-macro {
   width: 300px;
-  height: 450px;
+  height: 380px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -120,9 +127,10 @@
 }
 .img-macro {
   margin-top: 10px;
-  width: 80px;
+  max-width: 50px;
+  
 }
-.img-macro img {
+.img-group-text .img-macro img {
   width: 100%;
 }
 
@@ -141,12 +149,6 @@
   text-align: center;
 }
 
-.borda h2 {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 #orange {
   background-color: orange;
 }
@@ -154,6 +156,89 @@
 #red {
   background-color: orangered;
 }
+
+.hidratacao {
+  background-color: greenyellow;
+  display: flex;
+  align-items: center;
+}
+
+.hidra-grupo {
+  border: 2px solid red;
+}
+
+.details-summary {
+  border: 2px solid rgb(229, 255, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1300px) {
   .home__header {
@@ -182,42 +267,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 25px;
 }
 
-.hidratacao {
-  background-image: url(../../assets/img/agua.jpg);
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  display: flex;
-  justify-content: space-around;
-}
-
-.containeir-hidratacao {
-  background-color: #ffffff9a;
-  width: 600px;
-  padding: 10px;
-}
-
-.hidratacao-group {
-  margin-bottom: 30px;
-}
-
-details {
-  background-color: #fff;
-}
-summary {
-  outline: none;
-  border-bottom: 1px solid #cccccca1;
-  padding: 5px;
-  cursor: pointer;
-  background-color: rgb(104, 180, 252);
-}
 
 @media (max-width: 720px) {
+  .header__home {
+    height: 650px;
+  }
+
   .macro {
     flex-direction: column;
     text-align: center;
@@ -252,20 +310,4 @@ summary {
     width: 100px;
   }
 
-  .containeir-hidratacao {
-    width: 100%;
-    background-color: #ffffff75;
-    display: grid;
-    place-items: center;
-  }
-  summary,
-  details {
-    width: 100%;
-  }
-
-  .hidratacao-group {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-  }
 }
