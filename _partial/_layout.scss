@@ -31,6 +31,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 0;
 
   h1 {
     font-size: 48px;
@@ -39,12 +40,10 @@
   h2 {
     color: $white-dark;
   }
-  img{
+  img {
     border: 1px solid;
   }
 }
-
-
 
 .btn-hero {
   padding: 5px 10px;
@@ -55,20 +54,72 @@
   text-align: center;
   line-height: 150%;
 }
-.btn-hero:hover{
+.btn-hero:hover {
   animation: scaleButton 0.8s alternate infinite;
 }
 @keyframes scaleButton {
-  to{
+  to {
     transform: scale(1.07);
   }
 }
 
 
-@media(max-width: 768px){
-  .hero{
-    justify-content: flex-start;
-    min-height: 60vh;
-  }
 
+@media (max-width: 768px) {
+  .hero {
+    justify-content: flex-start;
+    min-height: 40vh;
+  }
+  .beneficios{
+    gap: 10px;
+    flex-direction: column;
+  }
 }
+
+
+
+//Benefícios
+.important-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 8px;
+}
+
+.treinar-dieta{
+  h1{
+    text-align: center;
+  }
+}
+
+.beneficios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;  
+}
+
+.beneficios-img{
+  width: 500px;
+    img{
+      width: 100%;
+    }
+}
+
+.beneficios-list{
+  display: flex;
+  font-size: 12px;
+  ul{
+    li{
+      margin-bottom: 20px
+    }
+      ::before{
+        content: '✔️';
+        margin-right: 10px;
+      }
+  }
+  
+}
+
+
