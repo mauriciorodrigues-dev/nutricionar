@@ -1,8 +1,5 @@
 //Home
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
+
 .bg-header {
   position: relative;
 }
@@ -25,6 +22,7 @@
 }
 
 //Hero
+
 .hero {
   min-height: 80vh;
   display: flex;
@@ -39,9 +37,6 @@
   }
   h2 {
     color: $white-dark;
-  }
-  img {
-    border: 1px solid;
   }
 }
 
@@ -63,63 +58,60 @@
   }
 }
 
-
-
 @media (max-width: 768px) {
   .hero {
     justify-content: flex-start;
     min-height: 40vh;
-  }
-  .beneficios{
-    gap: 10px;
-    flex-direction: column;
   }
 }
 
 
 
 //Benefícios
-.important-content {
+
+.beneficios-group{
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  padding: 8px;
-}
-
-.treinar-dieta{
-  h1{
-    text-align: center;
-  }
-}
-
-.beneficios {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;  
-}
-
-.beneficios-img{
-  width: 500px;
-    img{
-      width: 100%;
-    }
-}
-
-.beneficios-list{
-  display: flex;
-  font-size: 12px;
-  ul{
-    li{
-      margin-bottom: 20px
-    }
-      ::before{
-        content: '✔️';
-        margin-right: 10px;
-      }
-  }
   
 }
 
+.beneficios{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
+    h1{
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      text-align: center;
+    }
+}
+
+.img-beneficios{
+  width: 500px;
+}
+
+.beneficio-card{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.lista-beneficios{
+  display: flex;
+  ul{
+
+    li{
+      margin-bottom: 20px;
+    }
+    ::before{
+      content: '✔️';
+      margin-right: 20px;
+    }
+  }
+}

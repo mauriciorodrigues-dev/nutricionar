@@ -1,58 +1,38 @@
 header {
   width: 100%;
   color: $primary-dark;
-  padding: 0 8px; 
+  // padding: 0 8px;
 }
 
-
 .header-content {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: $white-light;
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // z-index: 999;
-
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-
-  img {
-    width: 100%;
-    margin: 5px;
-  }
-}
-.links{
+.links {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
   width: 100%;
-
 }
 .links a {
   color: $white-light;
-  
 }
 
-.login a{
+.login a {
   color: $white-light;
 }
 
-.login a:hover{
+.login a:hover {
   color: $primary-red;
 }
 
-
-
-
-@media(max-width: 768px) {
-  .links{
+@media (max-width: 768px) {
+  .links {
     display: none;
   }
 }

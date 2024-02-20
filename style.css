@@ -11,23 +11,14 @@
 header {
   width: 100%;
   color: #06121e;
-  padding: 0 8px;
 }
 
 .header-content {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: white;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-.logo img {
-  width: 100%;
-  margin: 5px;
 }
 
 .links {
@@ -55,11 +46,6 @@ header {
     display: none;
   }
 }
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 .bg-header {
   position: relative;
 }
@@ -95,9 +81,6 @@ header {
 .hero h2 {
   color: #efffeb;
 }
-.hero img {
-  border: 1px solid;
-}
 
 .btn-hero {
   padding: 5px 10px;
@@ -123,53 +106,53 @@ header {
     justify-content: flex-start;
     min-height: 40vh;
   }
-  .beneficios {
-    gap: 10px;
-    flex-direction: column;
-  }
 }
-.important-content {
+.beneficios-group {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  padding: 8px;
-}
-
-.treinar-dieta h1 {
-  text-align: center;
 }
 
 .beneficios {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+.beneficios h1 {
+  border-bottom: 1px solid #ccc;
   width: 100%;
+  text-align: center;
 }
 
-.beneficios-img {
+.img-beneficios {
   width: 500px;
 }
-.beneficios-img img {
+
+.beneficio-card {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.beneficios-list {
+.lista-beneficios {
   display: flex;
-  font-size: 12px;
 }
-.beneficios-list ul li {
+.lista-beneficios ul li {
   margin-bottom: 20px;
 }
-.beneficios-list ul ::before {
+.lista-beneficios ul ::before {
   content: "✔️";
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   position: relative;
   background-color: #06121e;
   color: white;
@@ -192,6 +175,7 @@ a {
   max-width: 1440px;
   margin: 0 auto;
   width: 100%;
+  padding: 0 10px;
 }
 
 ul {
