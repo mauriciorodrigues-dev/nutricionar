@@ -4,17 +4,18 @@ header {
   padding: 0 8px; 
 }
 
+
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  color: $primary-light;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  background-color: white;
+  justify-content: space-between;
+  color: $white-light;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // z-index: 999;
+
 }
 
 .logo {
@@ -23,18 +24,31 @@ header {
 
   img {
     width: 100%;
-    margin-right: 10px;
+    margin: 5px;
   }
 }
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
 
+}
 .links a {
-  color: $primary-light;
-  margin-right: 20px;
+  color: $white-light;
+  
+}
+
+.login a{
+  color: $white-light;
 }
 
 .login a:hover{
   color: $primary-red;
 }
+
+
 
 
 @media(max-width: 768px) {

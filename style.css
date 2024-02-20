@@ -9,21 +9,15 @@
 /* SCSS HEX */
 header {
   width: 100%;
-  color: #0b1f32;
+  color: #06121e;
   padding: 0 8px;
 }
 
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  color: #232c2e;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  background-color: white;
+  justify-content: space-between;
+  color: white;
 }
 
 .logo {
@@ -32,12 +26,23 @@ header {
 }
 .logo img {
   width: 100%;
-  margin-right: 10px;
+  margin: 5px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
 }
 
 .links a {
-  color: #232c2e;
-  margin-right: 20px;
+  color: white;
+}
+
+.login a {
+  color: white;
 }
 
 .login a:hover {
@@ -75,7 +80,6 @@ header {
 }
 
 .hero {
-  padding-top: 50px;
   min-height: 80vh;
   display: flex;
   align-items: center;
@@ -123,7 +127,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-color: #0b1f32;
+  background-color: #06121e;
   color: white;
 }
 
@@ -143,4 +147,5 @@ a {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
