@@ -1,0 +1,44 @@
+header {
+  width: 100%;
+  color: $primary-dark;
+  padding: 0 8px; 
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: $primary-light;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 100%;
+    margin-right: 10px;
+  }
+}
+
+.links a {
+  color: $primary-light;
+  margin-right: 20px;
+}
+
+.login a:hover{
+  color: $primary-red;
+}
+
+
+@media(max-width: 768px) {
+  .links{
+    display: none;
+  }
+}

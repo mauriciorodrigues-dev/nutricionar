@@ -1,0 +1,73 @@
+//Home
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.bg-header {
+  position: relative;
+}
+
+.bg-header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e),
+    url("../assets/img/wallpaper_musculacao.png");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; /* Full screen */
+  z-index: -1; /* Behind the content */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0.1;
+}
+
+//Hero
+.hero {
+  padding-top: 50px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 48px;
+    color: $white-dark;
+  }
+  h2 {
+    color: $white-dark;
+  }
+  img{
+    border: 1px solid;
+  }
+}
+
+.btn-hero {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  color: $white-light;
+  border-radius: 5px;
+  background-color: $primary-red;
+  text-align: center;
+  line-height: 150%;
+}
+.btn-hero:hover{
+  animation: scaleButton 0.8s alternate infinite;
+}
+@keyframes scaleButton {
+  to{
+    transform: scale(1.07);
+  }
+}
+
+
+@media(max-width: 768px){
+  .hero{
+    justify-content: flex-start;
+    min-height: 60vh;
+  }
+
+}

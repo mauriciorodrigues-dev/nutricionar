@@ -6,6 +6,10 @@
 }
 
 @import "_partial/colors";
+@import "_partial/header";
+@import "_partial/layout";
+
+
 
 body {
   font-family: "Poppins", sans-serif;
@@ -27,4 +31,9 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }

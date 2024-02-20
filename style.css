@@ -7,6 +7,117 @@
 }
 
 /* SCSS HEX */
+header {
+  width: 100%;
+  color: #0b1f32;
+  padding: 0 8px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #232c2e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.links a {
+  color: #232c2e;
+  margin-right: 20px;
+}
+
+.login a:hover {
+  color: rgb(185, 24, 64);
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.bg-header {
+  position: relative;
+}
+
+.bg-header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/img/wallpaper_musculacao.png");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; /* Full screen */
+  z-index: -1; /* Behind the content */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0.1;
+}
+
+.hero {
+  padding-top: 50px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero h1 {
+  font-size: 48px;
+  color: #efffeb;
+}
+.hero h2 {
+  color: #efffeb;
+}
+.hero img {
+  border: 1px solid;
+}
+
+.btn-hero {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(185, 24, 64);
+  text-align: center;
+  line-height: 150%;
+}
+
+.btn-hero:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+  to {
+    transform: scale(1.07);
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    justify-content: flex-start;
+    min-height: 60vh;
+  }
+}
 body {
   font-family: "Poppins", sans-serif;
   width: 100vw;
@@ -27,4 +138,9 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
