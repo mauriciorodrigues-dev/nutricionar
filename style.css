@@ -302,7 +302,8 @@ header {
   flex-wrap: wrap;
 }
 
-.img-hidra, .texto-hidra {
+.img-hidra,
+.texto-hidra {
   width: 500px;
 }
 
@@ -314,6 +315,18 @@ header {
 details {
   cursor: pointer;
 }
+details button {
+  width: 150px;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid rgba(204, 204, 204, 0.2588235294);
+  border-radius: 5px;
+}
+details button:hover {
+  background-color: rgb(185, 24, 64);
+}
 
 details p._texto_hidra {
   max-height: 0;
@@ -324,19 +337,6 @@ details p._texto_hidra {
 details[open] p._texto_hidra {
   max-height: 1000px; /* Ajuste conforme necessário */
   transition: max-height 0.5s ease-in;
-}
-
-summary button {
-  width: 150px;
-  padding: 5px;
-  margin-bottom: 10px;
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid rgba(204, 204, 204, 0.2588235294);
-  border-radius: 5px;
-}
-summary button:hover {
-  background-color: rgb(185, 24, 64);
 }
 
 .importancia-container {
