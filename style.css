@@ -190,11 +190,13 @@ header {
 }
 
 .card {
-  flex: 1 0 0;
+  position: relative;
+  width: 400px;
+  height: 400px;
   text-align: center;
-  border: 1px solid #ccc;
   border-radius: 10px;
   min-height: 300px;
+  background-color: #06121e;
 }
 .card h2 {
   border-bottom: 1px solid #ccc;
@@ -236,7 +238,7 @@ header {
 }
 
 #carbo {
-  border: 1px solid rgb(0, 174, 255);
+  border: 1px solid rgb(0, 119, 255);
 }
 
 #proteina {

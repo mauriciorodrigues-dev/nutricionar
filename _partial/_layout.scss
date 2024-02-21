@@ -116,7 +116,6 @@
     border-bottom: 1px solid #ccc;
     width: 100%;
     text-align: center;
-    
   }
 }
 
@@ -153,21 +152,21 @@
 }
 
 .card {
-  flex: 1 0 0;
+  position: relative;
+  width: 400px;
+  height: 400px;
   text-align: center;
-  border: 1px solid #ccc;
   border-radius: 10px;
   min-height: 300px;
-  
+  background-color: $primary-dark;
   h2 {
     border-bottom: 1px solid #ccc;
     padding: 5px;
     margin-bottom: 10px;
-    
   }
 }
 
-.img-texto{
+.img-texto {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,13 +201,13 @@
 }
 
 
-#carbo{
-  border: 1px solid rgb(0, 174, 255);
+#carbo {
+  border: 1px solid rgb(0, 119, 255);
 }
-#proteina{
+#proteina {
   border: 1px solid rgb(190, 89, 89);
 }
-#gordura{
+#gordura {
   border: 1px solid rgb(201, 198, 62);
 }
 
