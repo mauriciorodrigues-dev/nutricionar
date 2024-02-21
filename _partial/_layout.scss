@@ -247,7 +247,7 @@
   border-left: 1px solid #ffffff59;
   border-right: 1px solid #ffffff59;
   flex: 1;
-
+}
 // ---------------------------------------Fim Card Mobile
 // hidratação
 .hidratacao {
@@ -309,7 +309,7 @@ details[open] p._texto_hidra {
   justify-content: center;
   gap: 30px;
   flex-direction: row-reverse;
-  background-image: linear-gradient(to left, $primary-dark, #1164d1);
+  background-image: linear-gradient(to left, $primary-dark, #5fa6cf41);
   padding: 10px;
   flex-wrap: wrap;
 }
@@ -330,33 +330,40 @@ details[open] p._texto_hidra {
     justify-content: flex-start;
     min-height: 40vh;
   }
+
   .img-beneficios {
     max-width: 200px;
     img {
       width: 100%;
     }
   }
+  
   .lista-beneficios ul li {
     margin-bottom: 5px;
   }
+
   .img-macro {
     max-width: 350px;
     width: 100%;
   }
+
   .macro-texto {
     width: 100%;
     p {
       line-height: 150%;
     }
   }
+
   .card-macro {
     display: none;
   }
+
   .cards-mobile {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+  
   .card {
     width: 100%;
     z-index: -1;

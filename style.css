@@ -342,7 +342,7 @@ details[open] p._texto_hidra {
   justify-content: center;
   gap: 30px;
   flex-direction: row-reverse;
-  background-image: linear-gradient(to left, #06121e, rgba(255, 255, 255, 0.1098039216));
+  background-image: linear-gradient(to left, #06121e, rgba(95, 166, 207, 0.2549019608));
   padding: 10px;
   flex-wrap: wrap;
 }
