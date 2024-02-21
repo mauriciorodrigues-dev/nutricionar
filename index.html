@@ -142,7 +142,106 @@
           </div>
         </div>
       </div>
-
+      <!-- Cards para Mobile -->
+      <div class="cards-mobile container">
+        <div class="tabs">
+          <div class="btn">
+            <button id="defaultOpen" class="tablink" onclick="openPage('Carboidrato', this)">Carboidrato</button>
+            <button class="tablink" onclick="openPage('Proteina', this)">Proteína</button>
+            <button class="tablink" onclick="openPage('Gordura', this)">Gordura</button>
+          </div>
+        
+          <div id="Carboidrato" class="tabcontent">
+            <div class="card" id="carbo">
+              <div class="img-texto">
+                <div class="img-card">
+                  <img src="assets/img/pao.png" alt="Carboidratos">
+                </div>
+                <h2>Carboidrato</h2>
+              </div>
+              <div class="card-texto">
+                <p>São a principal fonte de energia. Eles se dividem em simples (açúcares) e complexos (amidos e fibras). Os carboidratos fornecem energia imediata, especialmente para o cérebro e os músculos.</p>
+              </div>
+              <div class="macro-fontes">
+                <ul>
+                  <li>Grãos inteiros (arroz integral, aveia, quinoa)</li>
+                  <li>Legumes (feijão, lentilhas, grão-de-bico)</li>
+                  <li>Frutas (maçãs, bananas, morangos)</li>
+                  <li>Vegetais (batata-doce, cenoura, brócolis)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        
+          <div id="Proteina" class="tabcontent">
+            <div class="card" id="proteina">
+              <div class="img-texto">
+                <div class="img-card">
+                  <img src="assets/img/proteins.png" alt="Carboidratos">
+                </div>
+                <h2>Proteína</h2>
+              </div>
+              <div class="card-texto">
+                <p> São fundamentais para a construção e reparação de tecidos, incluindo músculos, pele e órgãos. Além disso, desempenham um papel crucial na produção de enzimas, hormônios e anticorpos.</p>
+              </div>
+              <div class="macro-fontes">
+                <ul>
+                  <li>Carnes magras (frango, carne bovina magra)</li>
+                  <li>Peixes (salmão, atum, tilápia)</li>
+                  <li>Ovos e laticínios (ovos, iogurte, queijo)</li>
+                  <li>Legumes (soja, tofu, tempeh)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        
+          <div id="Gordura" class="tabcontent">
+            <div class="card" id="gordura">
+              <div class="img-texto">
+                <div class="img-card">
+                  <img src="assets/img/pao.png" alt="gordura">
+                </div>
+                <h2>Gordura</h2>
+              </div>
+              <div class="card-texto">
+                <p>São essenciais para a absorção de vit. lipossolúveis, como A, D, E e K. Além de serem uma fonte de energia, as gorduras são vitais para a saúde do cérebro, regulação hormonal e proteção dos órgãos.</p>
+              </div>
+              <div class="macro-fontes">
+                <ul>
+                  <li>Gorduras boas (azeite de oliva, óleo de coco)</li>
+                  <li>Frutos secos e sementes (amêndoas, chia)</li>
+                  <li>Peixes gordurosos (sardinha, salmão, arenque)</li>
+                  <li>Abacate e coco</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <script>
+      // Função para alternar entre as abas
+    function openPage(pageName, elmnt) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.className += " active";
+    }
+    
+    // Mostrar a primeira aba por padrão ao carregar a página
+    document.getElementById("Carboidrato").style.display = "block";
+    
+    window.onload = function() {
+        openPage('Carboidrato', document.getElementById('defaultOpen'));
+      };
+    
+    </script>
   </body>
 </html>
