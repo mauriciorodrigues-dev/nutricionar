@@ -101,12 +101,6 @@ header {
     transform: scale(1.07);
   }
 }
-@media (max-width: 768px) {
-  .hero {
-    justify-content: flex-start;
-    min-height: 40vh;
-  }
-}
 .beneficios-group {
   display: flex;
   align-items: center;
@@ -149,6 +143,135 @@ header {
   margin-right: 20px;
 }
 
+.macros {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.macros > h2 {
+  margin-top: 15px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  text-align: center;
+}
+
+.macro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.img-macro {
+  width: 560px;
+}
+.img-macro img {
+  width: 100%;
+}
+
+.macro-texto {
+  width: 500px;
+}
+.macro-texto p {
+  line-height: 150%;
+}
+
+.card-macro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  flex: 1 0 0;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  min-height: 300px;
+}
+.card h2 {
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.img-texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.img-card {
+  width: 50px;
+  text-align: center;
+}
+.img-card img {
+  width: 100%;
+}
+
+.card-texto {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.macro-fontes ul {
+  padding: 10px;
+}
+.macro-fontes ul li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.macro-fontes ul ::before {
+  content: "✅";
+  margin-right: 10px;
+}
+
+#carbo {
+  border: 1px solid rgb(0, 174, 255);
+}
+
+#proteina {
+  border: 1px solid rgb(190, 89, 89);
+}
+
+#gordura {
+  border: 1px solid rgb(201, 198, 62);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    justify-content: flex-start;
+    min-height: 40vh;
+  }
+  .img-beneficios {
+    max-width: 200px;
+  }
+  .img-beneficios img {
+    width: 100%;
+  }
+  .lista-beneficios ul li {
+    margin-bottom: 5px;
+  }
+  .img-macro {
+    max-width: 350px;
+    width: 100%;
+  }
+  .macro-texto {
+    width: 100%;
+  }
+  .macro-texto p {
+    line-height: 150%;
+  }
+}
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
@@ -156,6 +279,7 @@ body {
   position: relative;
   background-color: #06121e;
   color: white;
+  padding-bottom: 1000px;
 }
 
 button {
@@ -163,7 +287,8 @@ button {
   cursor: pointer;
 }
 
-img, svg {
+img,
+svg {
   width: 100%;
 }
 
