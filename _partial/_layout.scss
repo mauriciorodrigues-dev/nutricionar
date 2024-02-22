@@ -217,7 +217,6 @@
   background-color: #ccc;
   color: black;
   font-weight: bold;
-  
 }
 
 /* Estilo do conteúdo das abas */
@@ -327,10 +326,57 @@ details[open] p._texto_hidra {
   }
 }
 
+.defSup {
+  color: $white-light;
+  margin-top: 40px;
+}
+
+.container {
+  h2 {
+    text-align: center;
+    padding: 5px;
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+  }
+}
+
+.grafico-grupo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap-reverse;
+}
+.grafico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 250px;
+  margin-bottom: 10px;
+}
+canvas {
+  width: 100%;
+}
+.textoSuperavit {
+  flex: 1 0 250px;
+  width: 500px;
+}
+p {
+  margin-top: 20px;
+  width: 100%;
+}
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+
+.redline p{
+    border-bottom: rgba(255, 99, 132, 1);
+}
+
 @media (max-width: 768px) {
   .hero {
     justify-content: flex-start;
-    min-height: 60vh;
+    min-height: 40vh;
   }
 
   .img-beneficios {
@@ -339,7 +385,7 @@ details[open] p._texto_hidra {
       width: 100%;
     }
   }
-  
+
   .lista-beneficios ul li {
     margin-bottom: 5px;
   }
@@ -365,7 +411,7 @@ details[open] p._texto_hidra {
     align-items: center;
     justify-content: center;
   }
-  
+
   .card {
     width: 100%;
     z-index: -1;

@@ -359,10 +359,60 @@ details[open] p._texto_hidra {
   margin-right: 10px;
 }
 
+.defSup {
+  color: white;
+  margin-top: 40px;
+}
+
+.container h2 {
+  text-align: center;
+  padding: 5px;
+  margin: 20px 0;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.grafico-grupo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap-reverse;
+}
+
+.grafico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 250px;
+  margin-bottom: 10px;
+}
+
+canvas {
+  width: 100%;
+}
+
+.textoSuperavit {
+  flex: 1 0 250px;
+  width: 500px;
+}
+
+p {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.reverse p {
+  border-bottom: rgb(255, 99, 132);
+}
+
 @media (max-width: 768px) {
   .hero {
     justify-content: flex-start;
-    min-height: 60vh;
+    min-height: 40vh;
   }
   .img-beneficios {
     max-width: 200px;

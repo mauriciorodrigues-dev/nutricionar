@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nutricionar - A mudança do seu shape começa aqui!</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -259,6 +260,44 @@
         </div>
       </div>
     </section>
+    <!-- Seção Superávit e déficit Calórico -->
+    <section class="defSup ">
+      
+      <div class="container">
+        <h2>Superávit e Déficit Calóricos</h2>
+        <div class="grafico-grupo">
+          <div class="grafico">
+            <canvas id="caloricSurplusChart"></canvas>
+          </div>
+          <div class="textoSuperavit">
+            <h3>Superávit Calórico</h3>
+            <p>
+              O superávit calórico ocorre quando você consome mais calorias do que
+              gasta. Isso é geralmente associado ao ganho de massa muscular, pois o
+              corpo tem um excedente de energia para construir e reparar tecidos
+              musculares. É importante, no entanto, equilibrar esse superávit para
+              evitar ganho excessivo de gordura.
+            </p>
+          </div>
+        </div>
+        <div class="grafico-grupo reverse">
+          <div class="grafico">
+            <canvas id="caloricDeficitChart"></canvas>
+          </div>
+          <div class="redLine textoSuperavit">
+            <h3>Défict Calórico</h3>
+            <p>
+              Por outro lado, o déficit calórico ocorre quando você consome menos
+              calorias do que gasta. Isso é comumente associado à perda de peso, pois
+              o corpo utiliza reservas de energia (como a gordura corporal) para
+              compensar o déficit. Na musculação, um déficit controlado pode ser
+              utilizado para reduzir a gordura corporal, mas é essencial manter a
+              ingestão de proteínas para preservar a massa muscular.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Seção Hidratação -->
     <section id="Hidratacao" class="hidratacao container">
@@ -320,10 +359,11 @@
             <li>Desempenho Aprimorado</li>
             <li>Saúde Renal</li>
           </ul>
-          <button onclick="consumoAgua()">Calcule seu consumo de água diário!</button>
+          <button onclick="consumoAgua()">
+            Calcule seu consumo de água diário!
+          </button>
         </div>
       </div>
-           
     </section>
 
     <script>
@@ -357,10 +397,64 @@
 
       //Calculando o consumo de água!
       function consumoAgua() {
-        let peso = parseFloat(prompt('Digite seu peso'))
-        peso  = Math.round(peso);
-        alert(`Você precisa consumir de ${peso*3/100} até ${peso*5/100} litros de água por dia`)
+        let peso = parseFloat(prompt("Digite seu peso"));
+        peso = Math.round(peso);
+        alert(
+          `Você precisa consumir de ${(peso * 3) / 100} até ${
+            (peso * 5) / 100
+          } litros de água por dia`
+        );
       }
+
+      // Gráfico Superávit e Déficit Calórico
+      // Dados para o Superávit Calórico
+      var surplusData = {
+      labels: ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4', 'Semana 5'], // Adicione mais semanas conforme necessário
+      datasets: [{
+        label: 'Superávit Calórico',
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1,
+        data: [3000, 3100, 3200, 3300, 3400], // Adicione mais valores conforme necessário
+      }]
+    };
+
+    // Dados para o Déficit Calórico
+    var deficitData = {
+      labels: ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4', 'Semana 5'], // Adicione mais semanas conforme necessário
+      datasets: [{
+        label: 'Déficit Calórico',
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        borderColor: 'rgba(255, 99, 132, 1)',
+        borderWidth: 1,
+        data: [2800, 2650, 2500, 2350, 2200], // Adicione mais valores conforme necessário
+      }]
+    };
+
+    // Configurações gerais
+    var options = {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    };
+
+    // Criar gráfico de Superávit Calórico
+    var surplusCtx = document.getElementById('caloricSurplusChart').getContext('2d');
+    var surplusChart = new Chart(surplusCtx, {
+      type: 'bar',
+      data: surplusData,
+      options: options
+    });
+
+    // Criar gráfico de Déficit Calórico
+    var deficitCtx = document.getElementById('caloricDeficitChart').getContext('2d');
+    var deficitChart = new Chart(deficitCtx, {
+      type: 'bar',
+      data: deficitData,
+      options: options
+    });
     </script>
   </body>
 </html>
