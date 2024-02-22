@@ -347,6 +347,10 @@ details[open] p._texto_hidra {
   flex-wrap: wrap;
 }
 
+.lista-hidra {
+  display: flex;
+  flex-direction: column;
+}
 .lista-hidra ul li {
   margin-bottom: 10px;
 }

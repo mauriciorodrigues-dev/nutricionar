@@ -320,8 +320,10 @@
             <li>Desempenho Aprimorado</li>
             <li>Saúde Renal</li>
           </ul>
+          <button onclick="consumoAgua()">Calcule seu consumo de água diário!</button>
         </div>
       </div>
+           
     </section>
 
     <script>
@@ -351,6 +353,13 @@
       function fecharDetalhes() {
         var detalhes = document.getElementById("detalhes");
         detalhes.removeAttribute("open");
+      }
+
+      //Calculando o consumo de água!
+      function consumoAgua() {
+        let peso = parseFloat(prompt('Digite seu peso'))
+        peso  = Math.round(peso);
+        alert(`Você precisa consumir de ${peso*3/100} até ${peso*5/100} litros de água por dia`)
       }
     </script>
   </body>

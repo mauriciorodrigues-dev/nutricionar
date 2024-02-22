@@ -314,6 +314,8 @@ details[open] p._texto_hidra {
   flex-wrap: wrap;
 }
 .lista-hidra {
+  display: flex;
+  flex-direction: column;
   ul {
     li {
       margin-bottom: 10px;
