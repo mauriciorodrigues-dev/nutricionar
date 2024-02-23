@@ -405,7 +405,8 @@ p {
   display: flex;
   flex-direction: row-reverse;
 }
-.reverse p {
+
+.redline p {
   border-bottom: rgb(255, 99, 132);
 }
 
