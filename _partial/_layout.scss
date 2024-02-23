@@ -370,6 +370,30 @@ p {
     border-bottom: rgba(255, 99, 132, 1);
 }
 
+.siglas{
+  background-image: linear-gradient(to bottom, #504f4f18, 25%, $primary-dark);
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.sgl-grupo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.img-siglas{
+  width: 80px;
+  img{width: 100%;}
+}
+.texto-sigla{
+flex: 2;  
+}
+
+
 @media (max-width: 768px) {
   .hero {
     justify-content: flex-start;
