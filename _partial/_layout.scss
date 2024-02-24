@@ -470,6 +470,43 @@ p {
 .dinamico li span{
   position: relative;
 }
+
+.benef{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.img-benef{
+  width: 800px;
+  img{
+    width: 100%;
+  }
+}
+.lista-benef{
+  ul{
+    li{
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    ::before{
+      content: '🗹';
+      margin-right: 15px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 @keyframes typing {
   100%{
     left: 100%;
@@ -521,7 +558,8 @@ p {
     z-index: -1;
   }
   .musculacao {
-    min-height: 50vh;
+    min-height: 20vh;
+    align-items: center;
   }
   .main-text .estatico{
     font-size: 30px;

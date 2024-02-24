@@ -433,8 +433,33 @@
         </div>
       </section>
     </div>
+    <section class="beneficios-musculacao">
+      <div class="benef container">
+        <div class="img-benef">
+          <img src="assets/img/beneficios.svg" alt="Benefícios da musculação"/>
+        </div>
+        <div class="lista-benef">
+          <ul>
+            <li onclick="openModal('Aumento da Massa Muscular')">Aumento da Massa Muscular</li>
+            <li>Melhora da Saúde Óssea</li>
+            <li>Controle do Peso</li>
+            <li>Melhora da Postura</li>
+            <li>Aumento da Resistência</li>
+            <li>Saúde Cardiovascular</li>
+            <li>Equilíbrio Hormonal</li>
+            <li>Bem Estar Mental</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+<!-- MODAIS BENEFÍCIOS MUSCULAÇÃO -->
 
-
+<div id="modal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="modal-text">Teste</p>
+  </div>
+</div>
 
 
 
@@ -537,6 +562,24 @@
       data: deficitData,
       options: options
     });
+
+
+    function openModal(text) {
+        document.getElementById('modal-text').innerText = text;
+        document.getElementById('modal').style.display = 'block';
+    }
+
+    // Função para fechar o modal
+    function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+    }
+
+    // Fechar o modal clicando fora dele
+    window.onclick = function (event) {
+        if (event.target.className === 'modal') {
+            closeModal();
+        }
+    }
     </script>
   </body>
 </html>

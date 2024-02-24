@@ -516,6 +516,30 @@ p {
   position: relative;
 }
 
+.benef {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.img-benef {
+  width: 800px;
+}
+.img-benef img {
+  width: 100%;
+}
+
+.lista-benef ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.lista-benef ul ::before {
+  content: "🗹";
+  margin-right: 15px;
+}
+
 @keyframes typing {
   100% {
     left: 100%;
@@ -559,7 +583,8 @@ p {
     z-index: -1;
   }
   .musculacao {
-    min-height: 50vh;
+    min-height: 20vh;
+    align-items: center;
   }
   .main-text .estatico {
     font-size: 30px;
@@ -577,6 +602,35 @@ p {
     font-weight: 500;
   }
 }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+}
+
+/* Estilo para o botão de fechar */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
