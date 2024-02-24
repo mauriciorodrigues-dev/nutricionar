@@ -481,19 +481,47 @@ p {
 }
 
 .main-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 100px;
-  line-height: 1.2;
-  flex-wrap: wrap;
-}
-.main-text span {
-  color: palevioletred;
-  text-transform: uppercase;
+  display: inline-flex;
 }
 
+.main-text .estatico {
+  font-size: 90px;
+  font-weight: 400;
+}
+
+.main-text .dinamico {
+  margin-left: 5px;
+  line-height: 135px;
+  height: 200px;
+  overflow: hidden;
+}
+.main-text .dinamico li {
+  color: palevioletred;
+  font-size: 90px;
+  font-weight: 500;
+}
+
+.dinamico li span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border-left: 2px solid palevioletred;
+  animation: typing 5s steps(10) infinite;
+  background-color: #06121e;
+}
+
+.dinamico li span {
+  position: relative;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
 @media (max-width: 768px) {
   .hero {
     justify-content: flex-start;
@@ -533,8 +561,20 @@ p {
   .musculacao {
     min-height: 50vh;
   }
-  .main-text {
+  .main-text .estatico {
     font-size: 30px;
+    font-weight: 400;
+  }
+  .main-text .dinamico {
+    margin-left: 5px;
+    line-height: 48px;
+    height: 90px;
+    overflow: hidden;
+  }
+  .main-text .dinamico li {
+    color: palevioletred;
+    font-size: 30px;
+    font-weight: 500;
   }
 }
 body {
