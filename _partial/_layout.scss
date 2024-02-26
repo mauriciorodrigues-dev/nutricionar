@@ -488,11 +488,11 @@ p {
   ul{
     li{
       margin-bottom: 10px;
-      cursor: pointer;
     }
     ::before{
       content: '🗹';
       margin-right: 15px;
+      color: green;
     }
   }
 }

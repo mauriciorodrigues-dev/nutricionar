@@ -533,11 +533,11 @@ p {
 
 .lista-benef ul li {
   margin-bottom: 10px;
-  cursor: pointer;
 }
 .lista-benef ul ::before {
   content: "🗹";
   margin-right: 15px;
+  color: green;
 }
 
 @keyframes typing {
