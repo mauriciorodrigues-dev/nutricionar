@@ -540,6 +540,11 @@ p {
   color: green;
 }
 
+.main-card {
+  height: 600px;
+  position: relative;
+}
+
 @keyframes typing {
   100% {
     left: 100%;
