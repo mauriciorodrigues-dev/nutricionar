@@ -540,9 +540,54 @@ p {
   color: green;
 }
 
+.musc-cont {
+  background-color: #fff;
+  width: 100%;
+}
+
 .main-card {
-  height: 600px;
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  gap: 20px;
+}
+
+.musc-card {
+  max-width: 300px;
+  min-height: 450px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  z-index: 10;
+}
+.musc-card h4 {
+  padding: 10px;
+}
+.musc-card p {
+  padding: 8px;
+}
+
+.img-card-musc {
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.img-card-musc img {
+  width: 100%;
+}
+
+.musc-card .title-musc {
+  padding: 10px;
+}
+.musc-card .title-musc h3 {
+  background-color: rgb(0, 174, 255);
+  display: inline-block;
+  padding: 3px 15px;
+  border-radius: 30px;
 }
 
 @keyframes typing {
@@ -643,7 +688,6 @@ body {
   position: relative;
   background-color: #06121e;
   color: white;
-  padding-bottom: 1000px;
 }
 
 button {
