@@ -9,6 +9,7 @@
 @import "_partial/header";
 @import "_partial/layout";
 @import "_partial/modais";
+@import "_partial/media_query";
 
 body {
   font-family: "Poppins", sans-serif;
@@ -42,4 +43,20 @@ a {
 
 ul {
   list-style: none;
+}
+
+
+button {
+  display: block;
+  padding: 8px 20px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: $white-light;
+  line-height: 150%;
+  font-size: 16px;
+  transition: all .3s ease;
+  :hover{
+    background-color: red;
+  }
 }

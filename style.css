@@ -46,6 +46,42 @@ header {
     display: none;
   }
 }
+/*----CLASSES PARA SERES UTILIZADAS ----*/
+.title__h2 {
+  width: 100%;
+  color: #06121e;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(0, 174, 255);
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.img__class {
+  width: 500px;
+}
+
+.img__icon-class {
+  width: 50px;
+}
+
+.text__class {
+  width: 500px;
+  line-height: 150%;
+  text-indent: 20px;
+}
+
+p {
+  line-height: 1.8;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 48px;
+  color: #efffeb;
+}
+
+/*---------------------------------------*/
 .bg-header {
   position: relative;
 }
@@ -73,13 +109,6 @@ header {
   justify-content: center;
   flex-direction: column;
   margin: 0;
-}
-.hero h1 {
-  font-size: 48px;
-  color: #efffeb;
-}
-.hero h2 {
-  color: #efffeb;
 }
 
 .btn-hero {
@@ -114,15 +143,6 @@ header {
   justify-content: center;
   flex-direction: column;
 }
-.beneficios h1 {
-  border-bottom: 1px solid #ccc;
-  width: 100%;
-  text-align: center;
-}
-
-.img-beneficios {
-  width: 500px;
-}
 
 .beneficio-card {
   width: 100%;
@@ -149,12 +169,6 @@ header {
   flex-direction: column;
   align-items: center;
 }
-.macros > h2 {
-  margin-top: 15px;
-  border-bottom: 1px solid #ccc;
-  width: 100%;
-  text-align: center;
-}
 
 .macro-container {
   display: flex;
@@ -165,18 +179,8 @@ header {
   flex-wrap: wrap;
 }
 
-.img-macro {
-  width: 560px;
-}
-.img-macro img {
-  width: 100%;
-}
-
 .macro-texto {
   width: 500px;
-}
-.macro-texto p {
-  line-height: 150%;
 }
 
 .card-macro {
@@ -196,11 +200,6 @@ header {
   border-radius: 0 0 10px 10px;
   background-color: #06121e;
 }
-.card h2 {
-  border-bottom: 1px solid #ccc;
-  padding: 5px;
-  margin-bottom: 10px;
-}
 
 .img-texto {
   display: flex;
@@ -208,14 +207,6 @@ header {
   justify-content: center;
   width: 100%;
   gap: 20px;
-}
-
-.img-card {
-  width: 50px;
-  text-align: center;
-}
-.img-card img {
-  width: 100%;
 }
 
 .card-texto {
@@ -282,14 +273,6 @@ header {
   flex: 1;
 }
 
-.hidratacao h2 {
-  text-align: center;
-  padding: 5px;
-  margin-top: 20px;
-  border-bottom: 1px solid #ccc;
-  width: 100%;
-}
-
 .hidra-container {
   margin-top: 10px;
   display: flex;
@@ -342,7 +325,6 @@ details[open] p._texto_hidra {
   justify-content: center;
   gap: 30px;
   flex-direction: row-reverse;
-  background-image: linear-gradient(to left, #06121e, rgba(95, 166, 207, 0.2549019608));
   padding: 10px;
   flex-wrap: wrap;
 }
@@ -362,14 +344,6 @@ details[open] p._texto_hidra {
 .defSup {
   color: white;
   margin-top: 40px;
-}
-
-.container h2 {
-  text-align: center;
-  padding: 5px;
-  margin: 20px 0;
-  border-bottom: 1px solid #ccc;
-  width: 100%;
 }
 
 .grafico-grupo {
@@ -396,18 +370,9 @@ canvas {
   width: 500px;
 }
 
-p {
-  margin-top: 20px;
-  width: 100%;
-}
-
 .reverse {
   display: flex;
   flex-direction: row-reverse;
-}
-
-.redline p {
-  border-bottom: rgb(255, 99, 132);
 }
 
 .siglas {
@@ -415,22 +380,16 @@ p {
   align-items: center;
   flex-direction: column;
 }
-.siglas h2 {
-  text-align: center;
-  padding: 5px;
-  margin: 20px 0;
-  border-top: 1px solid #ccc;
-  width: 100%;
-}
 
 .sgl-grupo-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
-.sgl-grupo {
+.sigla-grupo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -438,18 +397,16 @@ p {
   padding: 10px;
   border: 1px solid #ccc;
   width: 350px;
-  height: 350px;
-}
-
-.img-siglas {
-  width: 50px;
-}
-.img-siglas img {
-  width: 100%;
+  height: 250px;
 }
 
 .texto-sigla {
   font-size: 14px;
+}
+
+.beneficios-musculacao {
+  display: flex;
+  flex-direction: column;
 }
 
 .bg-musc {
@@ -524,13 +481,6 @@ p {
   flex-wrap: wrap;
 }
 
-.img-benef {
-  width: 800px;
-}
-.img-benef img {
-  width: 100%;
-}
-
 .lista-benef ul li {
   margin-bottom: 10px;
 }
@@ -557,8 +507,8 @@ p {
 }
 
 .musc-card {
-  max-width: 300px;
-  min-height: 450px;
+  width: 400px;
+  height: 450px;
   overflow: hidden;
   border-radius: 10px;
   border: 1px solid rgb(255, 255, 255);
@@ -566,18 +516,6 @@ p {
 }
 .musc-card h4 {
   padding: 10px;
-}
-.musc-card p {
-  padding: 8px;
-}
-
-.img-card-musc {
-  width: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.img-card-musc img {
-  width: 100%;
 }
 
 .musc-card .title-musc {
@@ -588,6 +526,7 @@ p {
   display: inline-block;
   padding: 3px 15px;
   border-radius: 30px;
+  color: black;
 }
 
 @keyframes typing {
@@ -596,6 +535,36 @@ p {
     margin: 0 -35px 0 35px;
   }
 }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+}
+
+/* Estilo para o botão de fechar */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*------MEDIA QUERY LAYOUT-----*/
 @media (max-width: 768px) {
   .hero {
     justify-content: flex-start;
@@ -652,35 +621,6 @@ p {
     font-weight: 500;
   }
 }
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  text-align: center;
-}
-
-/* Estilo para o botão de fechar */
-.close {
-  color: #aaa;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
@@ -713,4 +653,19 @@ a {
 
 ul {
   list-style: none;
+}
+
+button {
+  display: block;
+  padding: 8px 20px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: white;
+  line-height: 150%;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+button :hover {
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */
