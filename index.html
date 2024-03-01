@@ -5,54 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nutricionar - A mudança do seu Shape começa aqui!</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fc1d6ae1da.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="img-bg">
-      <header class="header">
-        <nav class="navbar">
-          <div class="img_logo">
-            <img
-              width="50px"
-              src="assets/img/novologo_Nutricionar.png"
-              alt=""
-            />
-          </div>
-          <div class="links">
-            <div class="navbar">
-              <a href="#home">Home</a>
-              <a href="#news">News</a>
-              <div class="dropdown">
-              <button class="dropbtn" onclick="myFunction()">Nutrição
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" id="myDropdown">
-                <a href="#">Importância e Benefícios</a>
-                <a href="#">Macronutrientes</a>
-                <a href="#">Suplementação</a>
-              </div>
-              </div> 
-            </div>
-          </div>
+    <!-- HEADER -->
+    <div class="bg-home">
+      <header>
+
+        <nav class="header-content container">
+          
         </nav>
+
       </header>
     </div>
-    <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(e) {
-        if (!e.target.matches('.dropbtn')) {
-        var myDropdown = document.getElementById("myDropdown");
-          if (myDropdown.classList.contains('show')) {
-            myDropdown.classList.remove('show');
-          }
-        }
-      }
-      </script>
   </body>
 </html>
