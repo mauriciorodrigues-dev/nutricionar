@@ -1,1 +1,23 @@
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+@import "_partial/colors";
+@import "_partial/header";
+
+.container{
+  width: 1440px;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
