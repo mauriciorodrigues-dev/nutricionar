@@ -1,0 +1,37 @@
+header {
+  width: 100%;
+  background-color: $cor-preto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  z-index: 1;
+}
+
+.header-content {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logo-img {
+  width: 50px;
+  img {
+    width: 100%;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.links a {
+  color: $cor-branco;
+}
+.links a:hover{
+  color: $cor-laranja;
+}
