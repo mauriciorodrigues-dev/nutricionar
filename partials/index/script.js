@@ -1,15 +1,35 @@
-const loginButton = document.getElementById('login');
-const loginContainer = document.querySelector('.login-container');
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 0;
+  var id = setInterval(frame, 50);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      document.getElementById("label").innerHTML = width * 1  + '%'; // Atualiza o contador
+    }
+  }
+}
 
-loginButton.addEventListener('click', function() {
-  loginContainer.classList.add('show');
-});
+function entrarModoTelaCheia() {
+  var elemento = document.documentElement;
 
-// Como criar um toggle com essa classe show?
+  if (elemento.requestFullscreen) {
+      elemento.requestFullscreen();
+  } else if (elemento.mozRequestFullScreen) { /* Firefox */
+      elemento.mozRequestFullScreen();
+  } else if (elemento.webkitRequestFullscreen) { /* Chrome, Safari e Opera */
+      elemento.webkitRequestFullscreen();
+  } else if (elemento.msRequestFullscreen) { /* IE/Edge */
+      elemento.msRequestFullscreen();
+  }
+}
 
-
-// como acessar uma página do projeto atraves de um botão?
-
-document.querySelector('#logar').addEventListener('click', function() {
-  window.location.href = '../../atleta/modelo.html';
-});
+window.onload = function() {
+  var resposta = confirm("Esta página funciona melhor em tela cheia. Clique em OK para entrar em modo de tela cheia.");
+  if (resposta) {
+      entrarModoTelaCheia();
+  }
+};
