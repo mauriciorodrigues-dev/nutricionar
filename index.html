@@ -12,7 +12,7 @@
     ></script>
   </head>
   <body>
-    <div class="container-main">
+    <div class="container-main" id="cont-main">
       <div class="cont-img">
         <img
           onclick="entrarModoTelaCheia(); move().then(() => { mostrarSecao('sct-login'); });"
@@ -27,11 +27,13 @@
       <p id="label"></p>
       <div id="myBar"></div>
     </footer>
-    <section class="secao cont-login" id="sct-login">
-      <div class="img-login">
-        <img src="img/maromba-wallpaper.jpg" alt="" />
+    <section class="secao" id="sct-login">
+      <div class="section-content">
+        <div class="img-login">
+          <img src="img/maromba-wallpaper.jpg" alt="" />
+        </div>
+        <button class="login" id="form-login">Acessar</button>
       </div>
-      <button class="login" id="form-login">Acessar</button>
     </section>
     <script src="./partials/index/script.js"></script>
   </body>
