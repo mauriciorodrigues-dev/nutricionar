@@ -34,16 +34,12 @@ function move() {
 }
 
 function mostrarSecao(id) {
+
+  let secaoMain = document.getElementById('cont-main');
+  secaoMain.style.display = "none";
+
   let secao = document.getElementById(id);
   secao.style.display = "block";
   secao.scrollIntoView({ behavior: "smooth" });
 }
 
-// function mostrarSecao(id) {
-//   var secao = document.getElementById(id);
-//   secao.style.display = "block";
-  
-//   $('html, body').animate({
-//     scrollTop: $(secao).offset().top
-//   }, 1000); // Ajuste a duração da animação conforme necessário
-// }
