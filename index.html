@@ -15,7 +15,8 @@
     <div class="container-main">
       <div class="cont-img">
         <img
-          onclick="move(); entrarModoTelaCheia();"
+          onclick="entrarModoTelaCheia(); move().then(() => { mostrarSecao('sct-login'); });"
+          ;
           src="img/index/icon_home.jpeg"
           alt=""
         />
@@ -26,6 +27,12 @@
       <p id="label"></p>
       <div id="myBar"></div>
     </footer>
+    <section class="secao cont-login" id="sct-login">
+      <div class="img-login">
+        <img src="img/maromba-wallpaper.jpg" alt="" />
+      </div>
+      <button class="login" id="form-login">Acessar</button>
+    </section>
     <script src="./partials/index/script.js"></script>
   </body>
 </html>
