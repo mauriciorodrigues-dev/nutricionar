@@ -49,3 +49,9 @@ function iniciarSequencia() {
     }, 5000);
   });
 }
+
+function confirmarSaida() {
+  if (confirm("Gostaria realmente de sair do Nutricionar?")) {
+    window.close();
+  }
+}
