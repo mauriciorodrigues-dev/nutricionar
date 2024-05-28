@@ -23,7 +23,7 @@
 }
 
 .form-login {
-  width: 25rem;
+  width: 30rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -44,10 +44,13 @@
 
 .item {
   border-bottom: .1px solid #ccc;
+  display: flex;
+  align-items: center;
 }
 
 .item input {
-  /* width: 100%; */
+  width: 20rem;
+  color: #fff;
   padding: .8rem;
   border: none;
   outline: none;
@@ -66,7 +69,7 @@
 }
 
 .title {
-  width: 25rem;
+  width: 30rem;
   height: 10rem;
   border-bottom: .1rem solid #ccc;
   display: flex;
