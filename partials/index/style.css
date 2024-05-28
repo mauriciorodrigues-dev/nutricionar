@@ -1,102 +1,13 @@
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-:root{
-  font-size:62.5%; /* 1rem = 10px */
-}
-body{
-  font-size: 1.6rem;
-  background-color: #030E14;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.container-main {
-  width: 100%;
-  height: 95dvh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-}
-
-.container-main .cont-img {
-  max-width: 45%;
-}
-
-.container-main .cont-img img {
-  width: 100%;
-}
-
-#myBar {
-  width: 0%;
-  height: 5px;
-  background-color: #0998da;
-  border-radius: .5rem;
-}
-p {
-  color: #fff;
-}
-.progress-bar {
-  position: absolute;
-  bottom: 2rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-h1 {
-  color: #fff;
-  font-size: 1em;
-}
-
-.maior {
-  font-size: 1.5em;
-}
+@import '../../global/global.css';
+@import '../../partials/index/css/container-main.css';
+@import '../../partials/index/css/progress-bar.css';
+@import '../../partials/index/css/secao.css';
+@import '../../partials/index/css/section-login.css';
+@import '../../global/font.css';
+@import '../../partials/index/css/login-tela.css';
 
 
 
 
-.secao {
-  height: 100vh;
-  display: none;
-}
 
-.img-login {
-  width: 80%;
-}
-.img-login img {
-  width: 100%;
-}
-.section-content {
-  padding-top: 5rem;
-  height: 100vh;
-  display: flex;
-  background-color: black;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  overflow: hidden;
-}
-
- .section-content button {
-  display: inline-block;
-  width: 20rem;
-  border: none;
-  background-color: rgb(134, 49, 49);
-  position: absolute;
-  bottom: 2rem;
-  padding: 1rem;
-  color: #fff;
-}
 

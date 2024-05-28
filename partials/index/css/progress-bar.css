@@ -1,0 +1,18 @@
+#myBar {
+  width: 0%;
+  height: 5px;
+  background-color: #0998da;
+  border-radius: .5rem;
+}
+p {
+  color: #fff;
+}
+.progress-bar {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
