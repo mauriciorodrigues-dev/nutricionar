@@ -9,6 +9,10 @@
 
 .container-main .cont-img {
   max-width: 45%;
+  border: 5px solid rgb(90, 88, 88);
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 3rem;
 }
 
 .container-main .cont-img img {
