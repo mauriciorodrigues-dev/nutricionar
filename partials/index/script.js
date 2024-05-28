@@ -4,13 +4,10 @@ function entrarModoTelaCheia() {
   if (elemento.requestFullscreen) {
     elemento.requestFullscreen();
   } else if (elemento.mozRequestFullScreen) {
-    /* Firefox */
     elemento.mozRequestFullScreen();
   } else if (elemento.webkitRequestFullscreen) {
-    /* Chrome, Safari e Opera */
     elemento.webkitRequestFullscreen();
   } else if (elemento.msRequestFullscreen) {
-    /* IE/Edge */
     elemento.msRequestFullscreen();
   }
 }
@@ -23,23 +20,32 @@ function move() {
     function frame() {
       if (width >= 100) {
         clearInterval(id);
-        resolve(); // Resolve a promise quando a animação estiver concluída
+        resolve();
       } else {
         width++;
         elem.style.width = width + "%";
-        document.getElementById("label").innerHTML = width * 1 + "%"; // Atualiza o contador
+        document.getElementById("label").innerHTML = width + "%";
       }
     }
   });
 }
 
-function mostrarSecao(id) {
-
-  let secaoMain = document.getElementById('cont-main');
-  secaoMain.style.display = "none";
-
-  let secao = document.getElementById(id);
-  secao.style.display = "block";
-  secao.scrollIntoView({ behavior: "smooth" });
+function mostrarSecao(idAtual, idProxima) {
+  if (idAtual) {
+    let secaoAtual = document.getElementById(idAtual);
+    secaoAtual.style.display = "none";
+  }
+  let secaoProxima = document.getElementById(idProxima);
+  secaoProxima.style.display = "block";
+  secaoProxima.scrollIntoView({ behavior: "smooth" });
 }
 
+function iniciarSequencia() {
+  move().then(() => {
+    mostrarSecao(null, 'sct-login');
+    document.getElementById('cont-main').style.display = 'none';
+    setTimeout(() => {
+      mostrarSecao('sct-login', 'tela-login');
+    }, 5000);
+  });
+}
