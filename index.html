@@ -28,7 +28,7 @@
       </div>
     </div>
     <section class="secao" id="sct-login">
-      <div class="section-content ">
+      <div class="section-content">
         <div class="text">
           <h1>Bem-vindo ao</h1>
         </div>
@@ -55,11 +55,36 @@
             </div>
 
             <button id="btn-login">Entrar</button>
-            <button onclick="confirmarSaida()">Sair</button>
+            <button onclick="abrirDialogo()">Sair</button>
           </div>
         </div>
       </div>
     </section>
+
+    <dialog id="confirmacaoDialog">
+      <div class="content-dialog">
+        <i class="fa fa-question"></i>
+        <h3>Gostaria realmente de sair do Nutricionar?</h3>
+        <div class="button-dialog">
+          <button onclick="confirmarSaidaDialog(true)">Sim</button>
+          <button onclick="confirmarSaidaDialog(false)">Não</button>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- <dialog id="confirmacaoDialog" close>
+      <i class="fa-solid fa-question"></i>
+      <h3>Gostaria realmente de sair do Nutricionar?</h3>
+      <div class="button-dialog">
+        <button onclick="confirmarSaidaDialog(true)">
+          <i class="fa-solid fa-check"></i>
+        </button>
+        <button onclick="confirmarSaidaDialog(false)">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </dialog> -->
+
     <script src="./partials/index/script.js"></script>
   </body>
 </html>

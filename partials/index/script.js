@@ -42,16 +42,25 @@ function mostrarSecao(idAtual, idProxima) {
 
 function iniciarSequencia() {
   move().then(() => {
-    mostrarSecao(null, 'sct-login');
-    document.getElementById('cont-main').style.display = 'none';
+    mostrarSecao(null, "sct-login");
+    document.getElementById("cont-main").style.display = "none";
     setTimeout(() => {
-      mostrarSecao('sct-login', 'tela-login');
+      mostrarSecao("sct-login", "tela-login");
     }, 5000);
   });
 }
 
-function confirmarSaida() {
-  if (confirm("Gostaria realmente de sair do Nutricionar?")) {
+function abrirDialogo() {
+  let dialogo = document.getElementById("confirmacaoDialog");
+  dialogo.showModal();
+}
+
+function confirmarSaidaDialog(confirmacao) {
+  let dialogo = document.getElementById("confirmacaoDialog");
+  dialogo.close();
+  if (confirmacao) {
     window.close();
+  } else {
+    entrarModoTelaCheia(); // Retornar ao modo de tela cheia se o usuário cancelar
   }
 }
