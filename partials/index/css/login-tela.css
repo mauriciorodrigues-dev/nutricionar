@@ -19,6 +19,7 @@
   background-repeat: no-repeat;
   opacity: .1;
   filter: blur(.3rem);
+  z-index: -10;
 }
 
 .form-login {
