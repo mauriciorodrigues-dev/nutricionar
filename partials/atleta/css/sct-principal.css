@@ -2,5 +2,19 @@
   width: 100%;
   height: 100%;
   padding: 1rem;
-  background-color: black;
+  position: relative;
+}
+
+.sct-principal::before {
+  content: "";
+  position: absolute; /* Posicionamento absoluto */
+  top: 0px; /* Posição 0px a partir do topo */
+  left: 0px; /* Posição 20px a partir da esquerda */
+  width: 100%; /* Largura de 50% */
+  height: 100%; /* Altura de 50% */
+  background-image: url('../../atleta/img/back.jpg');
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1; /* Sobrepondo o elemento base */
 }
