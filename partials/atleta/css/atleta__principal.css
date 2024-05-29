@@ -1,0 +1,14 @@
+.img-principal img {
+  width: 100%;
+}
+
+.saudacao {
+  width: 100%;
+  background-color: #fff;
+
+}
+
+.icones {
+ display: flex;
+
+}
