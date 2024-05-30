@@ -1,0 +1,19 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root{
+  font-size:62.5%; /* 1rem = 10px */
+}
+body{
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  background-color: #ece6e6;
+}

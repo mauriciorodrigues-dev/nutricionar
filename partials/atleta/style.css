@@ -1,7 +1,9 @@
 @import '../../global/font.css';
-@import '../../global/global.css';
+@import '../../global/global__fff.css';
 @import '../../partials/atleta/css/secao.css';
 @import '../../partials/atleta/css/sct-principal.css';
 @import '../../partials/atleta/css/atleta__principal.css';
+@import '../../partials/atleta/css/icon-section.css';
+@import '../../partials/atleta/css/dashboard.css';
 
 

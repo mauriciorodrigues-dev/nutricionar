@@ -12,7 +12,11 @@
     ></script>
   </head>
   <body>
-    <section class="secao" id="atleta__principal">
+    <section
+      style="display: none"
+      class="section active"
+      id="atleta__principal"
+    >
       <div class="sct-principal">
         <div class="container">
           <div class="titulo">
@@ -23,27 +27,198 @@
             </div>
           </div>
           <div class="icones">
-            <button><i class="fa-solid fa-chart-simple"></i></button>
-            <button><i class="fa-solid fa-dumbbell"></i></button>
-            <button><i class="fa-solid fa-utensils"></i></button>
-            <button><i class="fa-solid fa-weight-scale"></i></button>
+            <button id="btnDashboard">
+              <i class="fa-solid fa-chart-simple"></i>
+            </button>
+            <button id="btnTreino"><i class="fa-solid fa-dumbbell"></i></button>
+            <button id="btnDieta"><i class="fa-solid fa-utensils"></i></button>
+            <button id="btnMedidas">
+              <i class="fa-solid fa-weight-scale"></i>
+            </button>
           </div>
         </div>
       </div>
     </section>
-    <section class="secao" id="atleta__dashboard">
-      <h1>Dashboard</h1>
+    <section class="section" id="atleta__dashboard">
+      
+      <div class="dash">
+        <p>dashboard</p>
+      </div>
+      <div class="initial">
+        <details>
+          <summary>Informações Gerais</summary>
+          <table>
+            <tr>
+              <th>Posição</th>
+              <th>Informação</th>
+            </tr>
+            <tr>
+              <td class="bold">Nome Completo</td>
+              <td>Mauricio Rodrigues</td>
+            </tr>
+            <tr>
+              <td class="bold">Idade</td>
+              <td>36 anos</td>
+            </tr>
+            <tr>
+              <td class="bold">Gênero</td>
+              <td>Masculino</td>
+            </tr>
+            <tr>
+              <td class="bold">Peso Atual</td>
+              <td>89kg</td>
+            </tr>
+            <tr>
+              <td class="bold">Altura</td>
+              <td>170cm</td>
+            </tr>
+            <tr>
+              <td class="bold">IMC</td>
+              <td>30.8 - Obesidade</td>
+            </tr>
+            <tr>
+              <td class="bold">Objetivo</td>
+              <td>Cutting</td>
+            </tr>
+          </table>
+        </details>
+        <details>
+          <summary>Cálculo Para TMB</summary>
+          <table>
+            <tr>
+              <th>Posição</th>
+              <th>Informação</th>
+            </tr>
+            <tr>
+              <td class="bold">FA</td>
+              <td>1.6</td>
+            </tr>
+            <tr>
+              <td class="bold">Fórm Usada</td>
+              <td>Herris-Benedict</td>
+            </tr>
+            <tr>
+              <td class="bold">Estratégia</td>
+              <td>High Carb/Protein Media/Low Fat</td>
+            </tr>
+            <tr>
+              <td class="bold">TMB</td>
+              <td>1899 cal</td>
+            </tr>
+            <tr>
+              <td class="bold">GET</td>
+              <td>3038 kcal</td>
+            </tr>
+            <tr>
+              <td class="bold">Déf / Sup</td>
+              <td>Défict - 750kcal</td>
+            </tr>
+            <tr>
+              <td class="bold">VET</td>
+              <td>2288 kcal</td>
+            </tr>
+          </table>
+        </details>
+      </div>
+      <div class="macronutriente">
+        <div class="card-container">
+          <h2>Divisão Macronutrientes</h2>
+          <div class="card">
+            <div class="name">
+              <i class="fa-solid fa-pizza-slice"></i>
+              <h3>Carboidratos</h3>
+            </div>
+            <div class="divisao">
+              <h4>Divisão</h4>
+              <table>
+                <tr>
+                  <th>%</th>
+                  <th>Kcal</th>
+                  <th>Kcal/g</th>
+                  <th>g</th>
+                  <th>g/kg</th>
+                </tr>
+                <tr>
+                  <td>50%</td>
+                  <td>1144</td>
+                  <td>4.0</td>
+                  <td>286</td>
+                  <td>3.21</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="name">
+              <i class="fa-solid fa-fish"></i>
+              <h3>Proteína</h3>
+            </div>
+            <div class="divisao">
+              <h4>Divisão</h4>
+              <table>
+                <tr>
+                  <th>%</th>
+                  <th>Kcal</th>
+                  <th>Kcal/g</th>
+                  <th>g</th>
+                  <th>g/kg</th>
+                </tr>
+                <tr>
+                  <td>35%</td>
+                  <td>801</td>
+                  <td>4.0</td>
+                  <td>200</td>
+                  <td>2.25</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="name">
+              <i class="fa-solid fa-bottle-droplet"></i>
+              <h3>Gordura</h3>
+            </div>
+            <div class="divisao">
+              <h4>Divisão</h4>
+              <table>
+                <tr>
+                  <th>%</th>
+                  <th>Kcal</th>
+                  <th>Kcal/g</th>
+                  <th>g</th>
+                  <th>g/kg</th>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>343</td>
+                  <td>9.0</td>
+                  <td>38</td>
+                  <td>0.43</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="icon__section">
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-dumbbell"></i>
+        <i class="fa-solid fa-chart-simple active"></i>
+        <i class="fa-solid fa-utensils"></i>
+        <i class="fa-solid fa-weight-scale"></i>
+      </div>
+
     </section>
-    <section class="secao" id="atleta__treino">
+    <section style="display: none" class="section" id="atleta__treino">
       <h1>Treino</h1>
     </section>
-    <section class="secao" id="atleta__dieta">
+    <section style="display: none" class="section" id="atleta__dieta">
       <h1>Dieta</h1>
     </section>
-    <section class="secao" id="atleta__medidas">
+    <section style="display: none" class="section" id="atleta__medidas">
       <h1>Antropometria</h1>
     </section>
 
-    <script src="script.js"></script>
+    <script src="../../partials/atleta/script.js"></script>
   </body>
 </html>
