@@ -7,6 +7,9 @@
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  position: relative;
+  
+
 }
 
 .dados_iniciais {
@@ -15,6 +18,7 @@
   padding-bottom: 1rem;
   border-bottom: 2px solid #fff;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .titulo {
@@ -41,6 +45,7 @@
   background-color: #ccc;
   width: 100%;
   color: black;
+  padding-bottom: 8rem;
 }
 
 table th, td {
@@ -49,7 +54,7 @@ table th, td {
 }
 
 .dados_iniciais.active .tabela {
-  max-height: 350px;
+  max-height: 600px;
   animation: fade 1s ease-in-out;
 }
 
