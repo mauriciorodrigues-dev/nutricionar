@@ -18,3 +18,10 @@
 //   });
 // });
 
+const faqs = document.querySelectorAll('.dados_iniciais')
+
+faqs.forEach(faq => {
+  faq.addEventListener('click', ()=>{
+    faq.classList.toggle('active');
+  })
+  })
