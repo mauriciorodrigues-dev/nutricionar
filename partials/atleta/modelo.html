@@ -27,97 +27,41 @@
     <section id="atleta__dashboard" class="section">
       <div class="dash__container">
         <h2><i class="fa-solid fa-chart-column"></i> Dashboard</h2>
-        <div class="dados_iniciais">
-          <div class="titulo">
-            <h3><i class="fa-solid fa-address-card"></i>Dados iniciais</h3>
+        <div class="faq">
+          <div class="question">
+            <h3>Informações Iniciais</h3>
             <svg width="15" height="10" viewBox="0 0 42 25">
               <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
             </svg>
           </div>
-          <div class="tabela">
-            <table>
+          <div class="answer">
+            <table class="d_iniciais" id="d_initial">
               <tr>
-                <!-- <th>Posição</th>
-                <th>Informação</th> -->
+                  
               </tr>
-              <tr>
-                <td class="bold">Nome</td>
-                <td>Mauricio Rodrigues</td>
-              </tr>
-              <tr>
-                <td class="bold">Idade</td>
-                <td>36 anos</td>
-              </tr>
-              <tr>
-                <td class="bold">Gênero</td>
-                <td>Masculino</td>
-              </tr>
-              <tr>
-                <td class="bold">Peso Atual</td>
-                <td>89kg</td>
-              </tr>
-              <tr>
-                <td class="bold">Altura</td>
-                <td>170cm</td>
-              </tr>
-              <tr>
-                <td class="bold">IMC</td>
-                <td>30.8 - Obesidade</td>
-              </tr>
-              <tr>
-                <td class="bold">Objetivo</td>
-                <td>Cutting</td>
-              </tr>
-            </table>
+          </table>
           </div>
         </div>
-        <div class="dados_iniciais">
-          <div class="titulo">
-            <h3><i class="fa-solid fa-calculator"></i>Cálculo TMB</h3>
+        <div class="faq">
+          <div class="question">
+            <h3>Cálculo TMB</h3>
             <svg width="15" height="10" viewBox="0 0 42 25">
               <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
             </svg>
           </div>
-          <div class="tabela">
-            <table>
+          <div class="answer">
+            <table class="tmb" id="tmb_calc">
               <tr>
-                <!-- <th>Posição</th>
-                <th>Informação</th> -->
+                  <th>Posição</th>
+                  <th>Informação</th>
               </tr>
-              <tr>
-                <td class="bold">FA</td>
-                <td>1.6</td>
-              </tr>
-              <tr>
-                <td class="bold">Fórm Usada</td>
-                <td>Herris-Benedict</td>
-              </tr>
-              <tr>
-                <td class="bold">Estratégia</td>
-                <td>High Carb/Protein Media/Low Fat</td>
-              </tr>
-              <tr>
-                <td class="bold">TMB</td>
-                <td>1899 cal</td>
-              </tr>
-              <tr>
-                <td class="bold">GET</td>
-                <td>3038 kcal</td>
-              </tr>
-              <tr>
-                <td class="bold">Déf / Sup</td>
-                <td>Défict - 750kcal</td>
-              </tr>
-              <tr>
-                <td class="bold">VET</td>
-                <td>2288 kcal</td>
-              </tr>
-            </table>
+          </table>
           </div>
         </div>
         <div class="cont-icons">
-          <button id="btnDashboard"><i class="fa-solid fa-chart-pie"></i></button>
+          <button id="btnDashboard"><i class="fa-solid fa-house"></i></button>
           <button id="btnTreino"><i class="fa-solid fa-dumbbell"></i></button>
+          <button id="btnDashboard"><i class="fa-solid fa-chart-pie"></i></button>
           <button id="btnDieta"><i class="fa-solid fa-utensils"></i></button>
           <button id="btnMedidas"><i class="fa-solid fa-weight-scale"></i></button>
         </div>
@@ -128,5 +72,6 @@
     <section id="atleta__medidas" class="section">Medidas</section> -->
 
     <script src="../../partials/atleta/script.js"></script>
+    <script src="../../partials/atleta/js/modelo.js"></script>
   </body>
 </html>

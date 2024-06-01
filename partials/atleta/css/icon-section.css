@@ -4,16 +4,17 @@
   left: 0;
   right: 0;
   display: flex;
-  justify-content: space-around; /* Centraliza os botões horizontalmente */
+  justify-content: space-between; /* Centraliza os botões horizontalmente */
   padding: 10px;
   background-color: rgb(32, 31, 31); 
   gap: 10px; /* Espaçamento entre os botões */
+  overflow: hidden;
 }
 
 .cont-icons button {
   border: none;
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   padding: 10px;
   cursor: pointer;
   background-color: rgb(32, 31, 31); 

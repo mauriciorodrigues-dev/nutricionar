@@ -18,7 +18,7 @@
 //   });
 // });
 
-const faqs = document.querySelectorAll('.dados_iniciais')
+const faqs = document.querySelectorAll('.faq')
 
 faqs.forEach(faq => {
   faq.addEventListener('click', ()=>{

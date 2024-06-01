@@ -8,70 +8,74 @@
   flex-direction: column;
   gap: 5rem;
   position: relative;
-  
-
 }
 
-.dados_iniciais {
+.title {
+  font-size: 3rem;
+  margin: 2rem 0rem;
+}
+
+.faq {
   max-width: 700px;
   margin-top: 2rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid #fff;
   cursor: pointer;
-  overflow: hidden;
 }
 
-.titulo {
+.question {
   display: flex;
   justify-content: space-between;
+}
 
-}
-.titulo h3 {
+.question h3 {
   font-size: 1.8rem;
+  color: rgb(100, 10, 151);
 }
-.titulo h3 i {
-  font-size: 3rem;
-  margin-right: 1rem;
-}
-.tabela {
+
+.answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 1.4s ease;
 }
-.tabela table {
+
+.answer p {
   padding-top: 1rem;
   line-height: 1.6;
   font-size: 1.4rem;
-  background-color: #ccc;
-  width: 100%;
-  color: black;
-  padding-bottom: 8rem;
 }
 
-table th, td {
-  padding: 0.4rem;
-  text-align: center;
-}
-
-.dados_iniciais.active .tabela {
-  max-height: 600px;
+.faq.active .answer {
+  max-height: 200px; /* Defina a altura máxima */
+  overflow-y: auto;  /* Adiciona a barra de rolagem */
   animation: fade 1s ease-in-out;
 }
 
-.dados_iniciais.active svg{
+.faq.active svg {
   transform: rotate(180deg);
 }
-svg{
-  transition: transform .2s ease-in-out;
+
+svg {
+  transition: transform 0.2s ease-in-out;
 }
 
 @keyframes fade {
-  from{
+  from {
     opacity: 0;
     transform: translateY(-10px);
   }
-  to{
+  to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0);
   }
+}
+
+/* Estilizando a barra de rolagem */
+.answer::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Deixa a barra de rolagem invisível */
+}
+.answer {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
