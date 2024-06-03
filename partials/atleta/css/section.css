@@ -1,9 +1,10 @@
 .section {
   width: 100%;
   height: 100vh;
-  display: none;
+  display: block;
 }
 
 .section.active {
   display: block;
 }
+
