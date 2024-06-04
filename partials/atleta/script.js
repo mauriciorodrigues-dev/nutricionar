@@ -20,13 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const faqs = document.querySelectorAll(".faq");
+// const faqs = document.querySelectorAll(".faq");
 
-faqs.forEach((faq) => {
-  faq.addEventListener("click", () => {
-    faq.classList.toggle("active");
-  });
-});
+// faqs.forEach((faq) => {
+//   faq.addEventListener("click", () => {
+//     faq.classList.toggle("active");
+//   });
+// });
 
 //Carrousel
 let slideIndex = 1;
