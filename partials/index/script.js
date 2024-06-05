@@ -64,3 +64,24 @@ function confirmarSaidaDialog(confirmacao) {
     entrarModoTelaCheia(); // Retornar ao modo de tela cheia se o usuário cancelar
   }
 }
+
+// LOGIN
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("btn-login").addEventListener("click", function () {
+    const username = document.getElementById("name").value;
+    const password = document.getElementById("password").value;
+
+    if (username === "mauricio1020" && password === "1020") {
+      // Redirecionar para a página modelo
+      window.location.href = "../../partials/atleta/modelo.html"; // Substitua pelo URL correto
+    } else {
+      alert("Usuário ou senha incorretos!");
+    }
+  });
+});
+
+function abrirDialogo() {
+  // Ação para o botão "Sair"
+  alert("Você clicou em sair");
+}
+

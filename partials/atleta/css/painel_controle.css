@@ -25,22 +25,23 @@
 
 /* Como inserir um gradiente nesse em um background-image? */
 
-.titulo {
-  width: 100%;
-  height: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  z-index: 15;
-}
 
 .atleta {
   color: #fff;
-  background-color: grey;
+
   width: 100%;
   text-align: center;
   padding: 1rem;
+  height: auto;
+}
+
+.atleta p:last-child {
+  font-size: 1rem;
+}
+
+.atleta i {
+  font-size: 10rem;
+  padding: 1rem 0;
 }
 
 .slideshow-container {
@@ -80,6 +81,7 @@
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: rgb(0, 132, 255);
 }
 
 /* Position the "next button" to the right */
