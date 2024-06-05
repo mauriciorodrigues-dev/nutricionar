@@ -67,21 +67,33 @@ function confirmarSaidaDialog(confirmacao) {
 
 // LOGIN
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("btn-login").addEventListener("click", function () {
-    const username = document.getElementById("name").value;
-    const password = document.getElementById("password").value;
+  const usuarios = [
+    { user: "Mauricio", pass: "1234", pagina: "user___.html" },
+    { user: "gabriel", pass: "1235", pagina: "principal2.html" },
+    { user: "modelo", pass: "1234", pagina: "modelo.html" },
+  ];
 
-    if (username === "mauricio1020" && password === "1020") {
-      // Redirecionar para a página modelo
-      window.location.href = "../../partials/atleta/modelo.html"; // Substitua pelo URL correto
-    } else {
-      alert("Usuário ou senha incorretos!");
+  document.getElementById("btn-login").addEventListener("click", logar);
+
+  function logar() {
+    const nome = document.querySelector("#nome").value;
+    const senha = document.querySelector("#senha").value;
+
+    for (let i = 0; i < usuarios.length; i++) {
+      if (usuarios[i].user === nome && usuarios[i].pass === senha) {
+        alert("Logado com sucesso!");
+        window.location.href = "partials/atleta/" + usuarios[i].pagina;
+        return; // Sai da função após encontrar correspondência
+      }
     }
-  });
-});
 
-function abrirDialogo() {
-  // Ação para o botão "Sair"
-  alert("Você clicou em sair");
-}
+    // Se o loop não encontrar correspondência
+    alert("Usuário ou Senha incorreto! Tente novamente.");
+  }
+
+  function abrirDialogo() {
+    // Ação para o botão "Sair"
+    alert("Você clicou em sair");
+  }
+});
 
