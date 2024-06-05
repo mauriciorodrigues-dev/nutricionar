@@ -76,8 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("btn-login").addEventListener("click", logar);
 
   function logar() {
-    const nome = document.querySelector("#nome").value;
-    const senha = document.querySelector("#senha").value;
+    const nome = document.querySelector("#name").value;
+    const senha = document.querySelector("#password").value;
 
     for (let i = 0; i < usuarios.length; i++) {
       if (usuarios[i].user === nome && usuarios[i].pass === senha) {
