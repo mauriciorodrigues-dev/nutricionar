@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btnDashboard: "atleta__dashboard",
     btnTreino: "atleta__treino",
     btnDieta: "atleta__dieta",
-    btnMedidas: "atleta__medidas",
+    // btnMedidas: "atleta__medidas",
     btnHome: "atleta__medidas",
   };
 
@@ -27,5 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //     faq.classList.toggle("active");
 //   });
 // });
+
 
 
