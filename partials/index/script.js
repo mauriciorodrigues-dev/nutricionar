@@ -81,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     for (let i = 0; i < usuarios.length; i++) {
       if (usuarios[i].user === nome && usuarios[i].pass === senha) {
-        alert("Logado com sucesso!");
         window.location.href = "partials/atleta/" + usuarios[i].pagina;
         return; // Sai da função após encontrar correspondência
       }
