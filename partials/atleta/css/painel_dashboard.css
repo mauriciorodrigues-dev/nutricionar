@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   color: #fff;
-  background-image: linear-gradient(135deg, #3b2667 10%, #bc78ec 100%);
+  background-image: linear-gradient(135deg, #1c1c1d 10%, #363636 100%);
   display: flex;
   flex-direction: column;
 }
@@ -95,7 +95,8 @@
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  background-color: rgba(0, 132, 255, 0);
+  background-color: transparent;
+  outline: none;
 }
 
 /* Position the "next button" to the right */
@@ -190,4 +191,37 @@
 
 .item .icon-item img {
   width: 100%;
+}
+.items-container {
+  text-align: center;
+}
+
+.macronutrientes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.box .nutr {
+  width: 5rem;
+}
+
+.box .nutr img {
+  width: 100%;
+}
+
+.div {
+  font-size: 1.5rem;
 }
