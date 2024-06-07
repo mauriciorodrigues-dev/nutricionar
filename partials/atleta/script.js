@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btnDashboard: "atleta__dashboard",
     btnTreino: "atleta__treino",
     btnDieta: "atleta__dieta",
-    // btnMedidas: "atleta__medidas",
-    btnHome: "atleta__medidas",
+    btnHome: "atleta__home",
   };
 
   Object.keys(buttons).forEach((buttonId) => {
