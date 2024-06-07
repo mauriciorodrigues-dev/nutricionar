@@ -9,7 +9,7 @@
 
 .dashboard_container header {
   width: 100%;
-  height: 10%;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,11 +32,17 @@
 }
 
 .dashboard_container main .items {
-  height: 35rem; /* Fixing the height of each section */
+  flex: 1; /* Fixing the height of each section */
   display: flex;
   align-items: center; /* Centering content vertically */
   justify-content: center; /* Centering content horizontally */
-  background: rgba(255, 255, 255, 0.1); /* Optional: background for better visibility */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Optional: background for better visibility */
+  flex-direction: column;
 }
 
 .dashboard_container footer {
@@ -48,43 +54,109 @@
   justify-content: center;
 }
 
-.graf {
+/* Carrousel */
+
+.slideshow-container {
+  max-width: 800px;
   position: relative;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  background-color: #ccc; /* Fundo representando 100% */
-  display: grid;
-  place-items: center;
-  color: black;
+  margin: auto;
 }
 
-.graf p {
-  font-size: .9rem;
-  z-index: 20;
+.icon {
+  width: 300px;
+  font-size: 120px;
+  text-align: center;
+  color: #f8fafc;
+  margin: 10px 0;
+  border: 1px solid #cccccc9f;
+  border-radius: 10px;
+  text-shadow: 1px 1px 5px;
+  background-color: transparent;
 }
 
-.graf::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: conic-gradient(red 0 30%, transparent 30% 100%); /* Representa 30% */
-  /* Ajusta o início da fatia */
-  clip-path: circle(50%);
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-.graf::after {
-  content: '';
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 80%;
-  height: 80%;
-  background-color: white; /* Círculo interno para criar o efeito de anel */
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgb(0, 132, 255);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+  color: #921010;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.grafico {
+  width: 30rem;
+  height: 350px;
+  background-color: transparent;
 }
