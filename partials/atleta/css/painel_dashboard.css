@@ -51,12 +51,12 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #0f0f0f;
+  background-color: #0e0d0d;
   color: white;
   text-align: center;
   padding: 10px 0;
 }
-footer.active {
+footer.activee {
   display: block;
 }
 footer nav ul {
@@ -250,6 +250,6 @@ ion-icon {
 }
 
 
-.section.active {
+.section.activee {
   display: block;
 }

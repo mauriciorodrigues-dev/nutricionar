@@ -17,26 +17,26 @@ document.addEventListener("DOMContentLoaded", function () {
         // Remove active class from all sections
         document
           .querySelectorAll(".section")
-          .forEach((section) => section.classList.remove("active"));
+          .forEach((section) => section.classList.remove("activee"));
 
-        // Add active class to the selected section
-        document.getElementById(sectionId).classList.add("active");
+        // Add activee class to the selected section
+        document.getElementById(sectionId).classList.add("activee");
 
-        // Add or remove the active class from the footer
+        // Add or remove the activee class from the footer
         if (sectionId === 'atleta__home') {
-          footer.classList.remove('active');
+          footer.classList.remove('activee');
         } else {
-          footer.classList.add('active');
+          footer.classList.add('activee');
         }
       });
     }
   });
 
-  // Initial check to hide the footer if the initial active section is "Home"
-  if (document.getElementById('atleta__home').classList.contains('active')) {
-    footer.classList.remove('active');
+  // Initial check to hide the footer if the initial activee section is "Home"
+  if (document.getElementById('atleta__home').classList.contains('activee')) {
+    footer.classList.remove('activee');
   } else {
-    footer.classList.add('active');
+    footer.classList.add('activee');
   }
 });
 
@@ -46,31 +46,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
   buttons.forEach((button) => {
     button.addEventListener("click", function () {
-      // Remove active class from all sections
+      // Remove activee class from all sections
       document
         .querySelectorAll(".section")
-        .forEach((section) => section.classList.remove("active"));
+        .forEach((section) => section.classList.remove("activee"));
 
       // Get the section ID from the data-section attribute
       const sectionId = button.getAttribute('data-section');
       
-      // Add active class to the selected section
-      document.getElementById(sectionId).classList.add("active");
+      // Add activee class to the selected section
+      document.getElementById(sectionId).classList.add("activee");
 
       // Show or hide the footer based on the section
       if (sectionId === 'atleta__home') {
-        footer.classList.remove('active');
+        footer.classList.remove('activee');
       } else {
-        footer.classList.add('active');
+        footer.classList.add('activee');
       }
     });
   });
 
-  // Initial check to hide the footer if the initial active section is "Home"
-  if (document.getElementById('atleta__home').classList.contains('active')) {
-    footer.classList.remove('active');
+  // Initial check to hide the footer if the initial activee section is "Home"
+  if (document.getElementById('atleta__home').classList.contains('activee')) {
+    footer.classList.remove('activee');
   } else {
-    footer.classList.add('active');
+    footer.classList.add('activee');
   }
 });
 
@@ -127,5 +127,5 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+  setTimeout(showSlides, 8000); // Change image every 2 seconds
 }
