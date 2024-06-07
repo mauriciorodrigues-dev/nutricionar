@@ -17,26 +17,26 @@ document.addEventListener("DOMContentLoaded", function () {
         // Remove active class from all sections
         document
           .querySelectorAll(".section")
-          .forEach((section) => section.classList.remove("activee"));
+          .forEach((section) => section.classList.remove("active"));
 
-        // Add activee class to the selected section
-        document.getElementById(sectionId).classList.add("activee");
+        // Add active class to the selected section
+        document.getElementById(sectionId).classList.add("active");
 
-        // Add or remove the activee class from the footer
+        // Add or remove the active class from the footer
         if (sectionId === 'atleta__home') {
-          footer.classList.remove('activee');
+          footer.classList.remove('active');
         } else {
-          footer.classList.add('activee');
+          footer.classList.add('active');
         }
       });
     }
   });
 
-  // Initial check to hide the footer if the initial activee section is "Home"
-  if (document.getElementById('atleta__home').classList.contains('activee')) {
-    footer.classList.remove('activee');
+  // Initial check to hide the footer if the initial active section is "Home"
+  if (document.getElementById('atleta__home').classList.contains('active')) {
+    footer.classList.remove('active');
   } else {
-    footer.classList.add('activee');
+    footer.classList.add('active');
   }
 });
 
@@ -46,22 +46,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   buttons.forEach((button) => {
     button.addEventListener("click", function () {
-      // Remove activee class from all sections
+      // Remove active class from all sections
       document
         .querySelectorAll(".section")
-        .forEach((section) => section.classList.remove("activee"));
+        .forEach((section) => section.classList.remove("active"));
 
       // Get the section ID from the data-section attribute
       const sectionId = button.getAttribute('data-section');
       
-      // Add activee class to the selected section
-      document.getElementById(sectionId).classList.add("activee");
+      // Add active class to the selected section
+      document.getElementById(sectionId).classList.add("active");
 
       // Show or hide the footer based on the section
       if (sectionId === 'atleta__home') {
-        footer.classList.remove('activee');
+        footer.classList.remove('active');
       } else {
-        footer.classList.add('activee');
+        footer.classList.add('active');
       }
     });
   });
@@ -84,48 +84,70 @@ document.addEventListener("DOMContentLoaded", function () {
 //   });
 // });
 
+
+
 //Carrousel
+// let slideIndex = 0;
+// showSlides(slideIndex);
+
+// // Next/previous controls
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
+
+// // Thumbnail image controls
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+
+// function showSlides(n) {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   let dots = document.getElementsByClassName("dot");
+//   if (n > slides.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";
+//   dots[slideIndex-1].className += " active";
+// } 
+
+
+
+// showSlides();
+
+// function showSlides() {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) {slideIndex = 1}
+//   slides[slideIndex-1].style.display = "block";
+//   setTimeout(showSlides, 8000); // Change image every 2 seconds
+// }
+
 let slideIndex = 0;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} 
-
-
-
 showSlides();
 
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].style.display = "none";  
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 8000); // Change image every 2 seconds
 }
