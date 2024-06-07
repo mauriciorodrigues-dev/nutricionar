@@ -20,21 +20,18 @@
           <p>Atleta</p>
         </div>
         <div class="icon-container">
-          <button id="btnDashboard">
+          <button class="btn" data-section="atleta__dashboard">
             <i class="fa-solid fa-chart-simple"></i>
             Dashboard
           </button>
-          <button id="btnTreino">
+          <button class="btn" data-section="atleta__treino">
             <i class="fa-solid fa-dumbbell"></i>
             Treino
           </button>
-          <button id="btnDieta">
+          <button class="btn" data-section="atleta__dieta">
             <i class="fa-solid fa-utensils"></i>
             Dieta
           </button>
-          <!-- <button id="btnMedidas">
-            <i class="fa-solid fa-weight-scale"></i>
-            Medidas</button> -->
         </div>
       </div>
     </section>
@@ -191,26 +188,29 @@
             </div>
           </section>
         </main>
-        <footer>
-          <nav>
-            <ul>
-              <li>
-                <ion-icon id="btnTreino" name="barbell-outline"></ion-icon>
-              </li>
-              <li>
-                <ion-icon id="btnHome" name="home-outline"></ion-icon>
-              </li>
-              <li>
-                <ion-icon id="btnDieta" name="restaurant-outline"></ion-icon>
-              </li>
-            </ul>
-          </nav>
-        </footer>
       </div>
     </section>
     <section id="atleta__treino" class="section"><h2>Treino</h2></section>
     <section id="atleta__dieta" class="section"><h2>Dieta</h2></section>
-    <!-- <section id="atleta__medidas" class="section"><h2>Medidas</h2></section> -->
+
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <ion-icon id="btnDashboard" name="speedometer-outline"></ion-icon>
+          </li>
+          <li id="btnTreino">
+            <ion-icon name="barbell-outline"></ion-icon>
+          </li>
+          <li>
+            <ion-icon id="btnHome" name="home-outline"></ion-icon>
+          </li>
+          <li>
+            <ion-icon id="btnDieta" name="restaurant-outline"></ion-icon>
+          </li>
+        </ul>
+      </nav>
+    </footer>
 
     <script src="../../partials/atleta/script.js"></script>
     <script src="../../partials/atleta/js/modelo.js"></script>
