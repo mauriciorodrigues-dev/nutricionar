@@ -20,16 +20,18 @@
           <p>Atleta</p>
         </div>
         <div class="icon-container">
-
           <button id="btnDashboard">
             <i class="fa-solid fa-chart-simple"></i>
-            Dashboard</button>
+            Dashboard
+          </button>
           <button id="btnTreino">
             <i class="fa-solid fa-dumbbell"></i>
-            Treino</button>
+            Treino
+          </button>
           <button id="btnDieta">
             <i class="fa-solid fa-utensils"></i>
-            Dieta</button>
+            Dieta
+          </button>
           <!-- <button id="btnMedidas">
             <i class="fa-solid fa-weight-scale"></i>
             Medidas</button> -->
@@ -39,56 +41,86 @@
     <section id="atleta__dashboard" class="section active">
       <div class="dashboard_container">
         <header>
-          <img src="../../img/index/NUTRICIONAR-27-05-2024.png" alt="">
+          <img src="../../img/index/NUTRICIONAR-27-05-2024.png" alt="" />
           <h5>Dashboard</h5>
         </header>
         <main>
           <section class="items">
             <div class="slideshow-container">
-          
               <div class="mySlides fade">
-                <div class="grafico">
-                  
+                <div class="item">
+                  <div class="icon-item">
+                    <img src="../atleta/img/card-id.png" alt="" />
+                  </div>
+                  <div class="description">
+                    <p>Mauricio</p>
+                    <p>36 anos</p>
+                    <p>170cm</p>
+                    <p>89kg</p>
+                  </div>
                 </div>
-                
-                <div class="text">TMB x GET</div>
+                <p class="text">Dados Iniciais</p>
               </div>
-    
+
               <div class="mySlides fade">
-                <div class="grafico">
-                  
-                </div>
-    
-                <div class="text">Treino</div>
+                  <div class="item">
+                    <div class="icon-item">
+                      <img src="../atleta/img/calories.png" alt="" />
+                    </div>
+                    <div class="description">
+                      <p>TMB</p>
+                      <p>1899</p>
+                      <p>Kcal</p>
+                    </div>
+                  </div>
+                <p class="text">Taxa Metabólica Basal</p>
               </div>
-    
+
               <div class="mySlides fade">
-                <div class="grafico">
-                  
+                  <div class="item">
+                    <div class="icon-item">
+                      <img src="../atleta/img/get.png" alt="" />
+                    </div>
+                    <div class="description">
+                      <p>GET</p>
+                      <p>3038</p>
+                      <p>Kcal</p>
+                  </div>
                 </div>
-                
-                <div class="text">Dieta</div>
+                <p class="text">Gasto Energético Total</p>
               </div>
-        
+
+              <div class="mySlides fade">
+                  <div class="item">
+                    <div class="icon-item">
+                      <img src="../atleta/img/bmi.png" alt="" />
+                    </div>
+                    <div class="description">
+                      <p>IMC</p>
+                      <p>30.8</p>
+                      <p>Obesidade</p>
+                  </div>
+                </div>
+                <p class="text">Índice de Massa Muscular</p>
+              </div>
+
               <!-- Next and previous buttons -->
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <br />
-    
+
             <!-- The dots/circles -->
             <div style="text-align: center">
               <span class="dot" onclick="currentSlide(1)"></span>
               <span class="dot" onclick="currentSlide(2)"></span>
               <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
             </div>
-            
           </section>
           <section class="items">Informações</section>
         </main>
-        <footer>
-          Nutricionar 2024
-        </footer>
+        <footer>Nutricionar 2024</footer>
       </div>
     </section>
     <section id="atleta__treino" class="section"><h2>Treino</h2></section>
