@@ -12,7 +12,7 @@
     ></script>
   </head>
   <body>
-    <section id="atleta__home" class="section active">
+    <section id="atleta__home" class="section">
       <div class="container">
         <div class="atleta">
           <i class="fa-solid fa-circle-user"></i>
@@ -190,7 +190,26 @@
         </main>
       </div>
     </section>
-    <section id="atleta__treino" class="section"><h2>Treino</h2></section>
+    <section id="atleta__treino" class="section active">
+      <div class="treino_container">
+        <header>
+          <img src="../../img/index/NUTRICIONAR-27-05-2024.png" alt="" />
+          <h5>Treino</h5>
+        </header>
+        <main>
+          <button id="btnPeriodizacao">Iniciar Periodização!</button>
+          <div class="inputPeriodizacao fadeInDown" id="periodizacao">
+            <p>Insira a data de Início da Periodização:</p>
+            <div class="group">
+              <input id="periodData" type="text" required>
+              <ion-icon id="btnIniciar" name="checkmark-outline"></ion-icon>
+              <ion-icon id="btnCancelar" name="close-outline"></ion-icon>
+            </div>
+            </div>
+          <p id="teste"></p>
+        </main>
+      </div>
+    </section>
     <section id="atleta__dieta" class="section"><h2>Dieta</h2></section>
 
     <footer>
@@ -214,6 +233,7 @@
 
     <script src="../../partials/atleta/script.js"></script>
     <script src="../../partials/atleta/js/modelo.js"></script>
+    <script src="../../partials/atleta/js/periodizacao.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
